@@ -207,7 +207,6 @@ class Header extends Component {
 
   openModal = (modalType) => {
     //noScroll.on(); //no-scroll on when Popup Menu Open
-
     if (modalType == "login")
       this.setState({ loginModalIsOpen: true, signupModalIsOpen: false });
     else if (modalType == "signup")

@@ -1,0 +1,1654 @@
+$primary-font: Segoe UI;
+$primary-color: #333;
+$light-blue: #53f5ff;
+$light-green: #79ff7a;
+
+
+//USAGE: @include transform(rotate(30deg));
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+
+//USAGE: @include transition(rotate(30deg));
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+//USAGE: @include border-radius();
+@mixin border-radius($property) {
+  -webkit-border-radius: $property;
+  -moz-border-radius: $property;
+  -ms-border-radius: $property;
+  -o-border-radius: $property;
+  border-radius: $property;
+}
+
+//USAGE: @extend %container-block;
+%container-block {
+  position: relative;
+  float: left;
+  display: table-cell;
+}
+
+//USAGE: @include background-size();
+@mixin background-size($property) {
+  -webkit-background-size: $property;
+  -moz-background-size: $property;
+  -ms-background-size: $property;
+  -o-background-size: $property;
+  background-size: $property;
+}
+
+//USAGE: @include background-attachment();
+@mixin background-attachment($property) {
+  -webkit-background-attachment: $property;
+  -moz-background-attachment: $property;
+  -ms-background-attachment: $property;
+  -o-background-attachment: $property;
+  background-attachment: $property;
+}
+
+
+//USAGE: @extend %image;
+%image {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+//USAGE: @extend %center-word;
+%center-word {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; //top: 50%;
+  //left: 50%;
+  //margin-right: -50%;
+  //@include transform(translate(-50%, -50%))
+}
+
+//USAGE: @extend %button-style;
+%button-style {
+  float: left;
+  font-family: Segoe UI;
+  font-size: 25px;
+  width: 300px;
+  height: 55px;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .3;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+  }
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .2;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+    transition-delay: .2s;
+  }
+  &:hover {
+    color: #ffffff;
+  }
+  &:hover:before {
+    top: 0;
+  }
+  &:hover:after {
+    top: 0;
+  }
+}
+
+.jr-btn-slg {
+  font-size: 1.3375rem !important;
+  padding: 0.675rem 5.75rem !important;
+}
+
+body {
+  //background: transparent!important;
+  overflow-y: auto;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.app-main-header {
+  transition: 0.3s ease!important;
+}
+
+.home-wrapper {
+  overflow: hidden;
+}
+
+
+.home-imgcontainer {
+  @extend %container-block;
+  width: 100%;
+  height: 70vh;
+  
+  &--video {
+    height: 100vh;
+  }
+  
+  &.verification {
+    height: 100vh;
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    height: 90vh;
+    }
+  }
+  /*----IPad Pro responsive----*/
+  @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (hover: none) {
+    &.responsive-video {
+      height: 100%;
+    }
+  }
+
+  @media only screen and (max-width:512px) {
+    &.youtube {
+      height: 500px;
+    }
+    &.double-resp {
+      height: 90vh;
+    }
+  }
+  @media only screen and (max-width:374px) {
+    &.double-resp {
+      height: 120vh;
+    }
+  }
+
+  #home-video,
+  &.responsive-video {
+    @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) {
+      height: 60vh;
+    }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 375px) and (orientation: portrait) {
+    height: 140vh;
+  }
+  @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+    //height: 140vh;
+    height: 120vh;
+  }
+  .parallax-cover {
+    background: transparent!important;
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  &.banner {
+    @extend %container-block;
+    width: 100%; //height: 700px;
+    @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) {
+      height: 60vh;
+    }
+  }
+  &.company {
+    @extend %container-block;
+    width: 100%;
+    height: 70vh;
+  }
+
+  &.stats {
+    @extend %container-block;
+    width: 100%;
+    height: 40vh;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      height: 100vh;
+    }
+    @media only screen and (max-width:512px) {
+      height: 60vh;
+    }
+  }
+
+  h3 {
+    position: relative;
+    text-align: center;
+    font-size: 33px;
+  }
+
+  video {
+    position: relative;
+    z-index: -1;
+  }
+  &.youtube {
+    height: 600px;
+    @media only screen and (min-width: 568px) and (max-width: 823px) and (orientation: landscape) {
+      height: 80vh;
+    }
+  }
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    &.youtube {
+      height: 500px;
+    }
+    .verification-img {
+      width: auto;
+    }
+    &.responsive-video {
+      display: flex;
+      justify-content: center;
+    }
+    &.double-resp {
+      height: 120vh;
+    }
+  }
+  &.home-carousel-responsive {
+    @media only screen and (min-width: 568px) and (max-width: 667px) and (orientation: landscape) {
+      height: 140vh;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) {
+      height: 60vh;
+    }
+  }
+
+  &.value-proposition {
+    height: 110vh;
+    align-items: start;
+    text-align: left;
+    @media only screen and (max-width: 767px) and (orientation: portrait) {
+      height: 210vh;
+    }
+    @media only screen and (max-width: 1200px) and (orientation: landscape) {
+      height: 230vh;
+    }
+    @media only screen and (min-width: 568px) and (max-width: 823px) and (orientation: landscape) {
+      height: 430vh;
+    }
+    @media only screen and (max-width: 360px) and (orientation: portrait) {
+      height: 300vh;
+    }
+    @media only screen and (min-height: 667px) and (min-width: 375px) and (max-height: 667px) and (max-width: 375px) and (orientation: portrait) {
+      height: 240vh;
+    }
+    @media only screen and (max-width: 568px) and (orientation: landscape) {
+      height: 600vh;
+    }
+    @media only screen and (min-width: 569px) and (max-width: 640px) and (orientation: landscape) {
+      height: 480vh;
+    } //iPad
+    @media only screen and (min-height: 1024px) and (min-width: 768px) and (max-height: 1024px) and (max-width: 768px) and (orientation: portrait) {
+      height: 150vh;
+    }
+    @media only screen and (min-width: 1024px) and (min-height: 768px) and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+      height: 200vh;
+    } //iPad Pro
+    @media only screen and (min-height: 1366px) and (min-width: 1024px) and (max-height: 1366px) and (max-width: 1024px) and (orientation: portrait) {
+      height: 120vh;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .res-1st {
+        order: 1;
+        text-align: center;
+      }
+      .res-2nd {
+        order: 2;
+      }
+      .res-3rd {
+        order: 3;
+      }
+    }
+
+    .h-33 {
+      height: 31%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      @media only screen and (max-width: 767px) and (orientation: portrait) {
+        width: 70%;
+      }
+      @media only screen and (min-width: 667px) and (max-width: 823px) and (orientation: landscape) {
+        width: 70%;
+      }
+      @media only screen and (min-width: 568px) and (max-width: 640px) and (orientation: landscape) {
+        width: 70%;
+      } //iPad
+      @media only screen and (min-height: 1024px) and (min-width: 768px) and (max-height: 1024px) and (max-width: 768px) and (orientation: portrait) {
+        width: 60%;
+      }
+      @media only screen and (min-width: 1024px) and (min-height: 768px) and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+        width: 50%;
+      } //iPad Pro
+      @media only screen and (min-height: 1366px) and (min-width: 1024px) and (max-height: 1366px) and (max-width: 1024px) and (orientation: portrait) {
+        width: 60%;
+      }
+    }
+    h3 {
+      font-weight: 700;
+      text-align: left;
+    }
+    i {
+      width: 100%;
+      font-size: 50px;
+      color: #00bcd4;
+    }
+    span {
+      color: black;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .row {
+      padding: 2rem 8rem 0;
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        padding: 0;
+      }
+    }
+    .text-content {
+      padding: 0 3rem;
+    }
+    p {
+      font-size: 15px;
+      text-align: left;
+    }
+  }
+}
+
+.home-wordcontainer {
+  @extend %center-word;
+  z-index: 1;
+  
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    
+    span {
+      font-size: 18px;
+    }
+    // button {
+    //   width: 30%;
+    // }
+  }
+  
+  &__redirect {
+    width: 15%;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid white;
+    display:  flex;
+    color: white;
+    justify-content: space-between;
+    color: white;    
+    transition: 0.3s ease;
+    
+     @include media-breakpoint-down(md) { 
+       width: 30%;
+     }
+     @include media-breakpoint-down(sm) { 
+       width: 60%;
+     }
+    
+    &:hover {    
+      color: #a9ecf5;
+      border-color: #a9ecf5;
+      text-decoration: none;
+    }
+    
+    i {
+      margin-top: 5px;
+    }
+  }
+
+  @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+    padding-top: 120px;
+  }
+  h3 {
+    position: relative;
+    text-align: center;
+    font-size: 33px;
+    color: #ffffff;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      font-size: 26px; //width: 92%;
+    }
+    @media only screen and (max-width:374px) {
+      font-size: 20px;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      font-size: 18px;
+    }
+  }
+  p {
+    position: relative;
+    text-align: center;
+    font-size: 23px;
+    color: #ffffff;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      font-size: 20px; //width: 92%;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      font-size: 12px;
+    }
+  }
+
+}
+
+.button-sec {
+  display: flex;
+  justify-content: center;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    flex-direction: column;
+    &.responsive {
+      .jr-btn:not(:last-child) {
+        margin: 15px 0px 20px 0px;
+      }
+    }
+    .blue-style,
+    .green-style,
+    .white-style {
+      width: auto;
+      width: 80%;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  a span font {
+    @media only screen and (max-width: 512px) {
+      font-size: 12px;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      font-size: 12px;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 667px) and (orientation: landscape) {
+      font-size: 10px;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 640px) and (orientation: landscape) {
+      font-size: 9px;
+    }
+    @media only screen and (max-device-width: 568px) and (orientation: landscape) {
+      font-size: 6px
+    }
+  }
+  span font {
+    @media only screen and (max-width: 374px) {
+      font-size: 12px;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      font-size: 15px;
+    }
+  }
+
+  .blue-style {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    @extend %button-style;
+    border: 2px solid $light-blue;
+    color: $light-blue;
+
+    &:before {
+      background: $light-blue;
+    }
+    &:after {
+      background: $light-blue;
+    }
+  }
+  .green-style {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    @extend %button-style;
+    border: 2px solid $light-green;
+    color: $light-green;
+
+    &:before {
+      background: $light-green;
+    }
+    &:after {
+      background: $light-green;
+    }
+  }
+  .white-style {
+    margin: 10px;
+    @extend %button-style;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+
+    &:before {
+      background: #ffffff;
+    }
+    &:after {
+      background: #ffffff;
+    }
+    &:hover {
+      color: #767bec;
+    }
+  }
+
+
+}
+
+.home-bannercontainer {
+  @extend %center-word;
+  flex-direction: row;
+  z-index: 1;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    flex-direction: column;
+    &.responsive {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &.youtube {
+      flex-direction: row;
+    }
+  }
+  h3 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      font-size: 26px;
+    }
+    @media only screen and (max-width:374px) {
+      font-size: 20px;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width:512px) {
+      font-size: 15px;
+    }
+    @media only screen and (max-width:374px) {
+      font-size: 12px;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      font-size: 12px;
+    }
+  }
+
+  img {
+    width: 100%;
+    opacity: 1;
+    max-width: 500px;
+  }
+  .banner-half-sec {
+    width: 48%;
+    flex-direction: column;
+    &.image {
+      text-align: center;
+    }
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      width: 80%;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 20px;
+
+      &.image {
+        width: 100%;
+        margin-top: 0px;
+      }
+      &.responsiveimage {
+        order: 1;
+      }
+      &.responsive {
+        order: 2;
+      }
+    }
+  }
+
+  &.white-style {
+    background-color: rgba(255, 255, 255, 0.9);
+    h3,
+    p {
+      color: #000000;
+    }
+  }
+  &.blue-style {
+    //background: linear-gradient(160deg, rgba(204, 230, 255, 0.95)/*#cce6ff*/
+    //-20%, rgba(91, 159, 255, 0.95)/*#5b9fff*/
+    //);
+    //background: linear-gradient(160deg, rgba(12, 224, 251, 0.89) -20%, rgba(16, 134, 149, 0.95));
+    background: linear-gradient(160deg, rgba(195, 248, 255, 0.89) -20%, rgba(17, 174, 194, 0.95));
+  }
+  &.dark-style {
+    background: linear-gradient(160deg, rgba(141, 141, 141, 0.95)/*#8d8d8d*/
+    -20%, rgba(37, 37, 37, 0.95)/*#252525*/
+    );
+  }
+  &.grey-style {
+    background-color: rgba(220, 220, 220, 0.76);
+    h3,
+    p {
+      color: #000000;
+    }
+  }
+  &.company {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 0;
+      margin: 20px 0;
+      font-weight: 300;
+      @media only screen and (max-width: 374px) {
+        font-size: 12px;
+        margin: 0;
+      }
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        margin: 0;
+      }
+    }
+  }
+  .home-carousel-title {
+    h3 {
+      text-align: left;
+      color: #00bcd4;
+      @media only screen and (min-device-width: 568px) and (max-device-width: 568px) and (orientation: landscape) {
+        font-size: 15px;
+      }
+    }
+
+    &.white h3 {
+      color: #ffffff;
+    }
+  }
+
+  .home-carousel-content {
+    display: flex;
+    transition: 1.2s;
+    cursor: pointer;
+    &.active {
+      //background: #00bcd41f;
+      transition: 1.2s;
+      box-shadow: rgba(0, 0, 0, 0.24) 5px 5px 20px 0px;
+      border-radius: 10px;
+      &.white {
+        //background: #ffffff94;
+      }
+    }
+    span {
+      text-align: left;
+      font-size: 20px;
+      color: #575757;
+      @media only screen and (min-width: 320px) and (max-width: 414px) and (orientation: portrait) {
+        font-size: 18px;
+      } // landscape responsive
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        font-size: 18px;
+      }
+      @media only screen and (min-device-width: 568px) and (max-device-width: 568px) and (orientation: landscape) {
+        font-size: 15px;
+      }
+    }
+    p {
+      text-align: left;
+      margin: 0;
+      font-size: 15px;
+      color: #575757;
+      @media only screen and (min-width: 320px) and (max-width: 414px) and (orientation: portrait) {
+        font-size: 12px;
+      } // landscape responsive
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        font-size: 12px;
+      }
+    }
+    i {
+      font-size: 25px;
+      @media only screen and (min-width: 320px) and (max-width: 414px) and (orientation: portrait) {
+        font-size: 20px;
+      } // landscape responsive
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        font-size: 20px;
+      }
+    }
+
+    .active-icon {
+      color: #00bcd4!important;
+      &.white {
+          color: #ffffff!important;
+      }
+    }
+    .inactive-icon {
+      color: #575757;
+      &:hover {
+        color: #00bcd4;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      &.white {
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .active-text {
+      display: block;
+    }
+    .inactive-text {
+      display: none;
+    }
+
+  }
+
+  .home-carousel-icon,
+  .klook-button-sec {
+    text-align: center;
+  }
+
+  .klook-button-sec {
+    text-align: center; // portrait responsive
+    &.klook-photo {
+      width: 100%;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 414px) and (orientation: portrait) {
+      button {
+        width: 70%;
+        span {
+          width: auto;
+          font {
+            font-size: 12px;
+            width: 200px;
+          }
+        }
+      }
+    } // landscape responsive
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      button {
+        width: 80%;
+        span {
+          width: auto;
+          font {
+            font-size: 12px;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+.double-sec {
+  @extend %center-word;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.double-sec-background {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    &.responsive {
+      img {
+        width: 90%;
+        margin-top: 2vh;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      margin-top: 0;
+    }
+  }
+
+  &.white-style {
+    background-color: rgba(255, 255, 255, 0.9);
+    h3,
+    p {
+      width: 70%;
+      color: #000000;
+    }
+  }
+  &.purple-style {
+    background: linear-gradient(rgba(255, 30, 30, 0.95) -20%, rgba(100, 99, 156, 0.95));
+    h3,
+    p {
+      width: 70%;
+      color: #ffffff;
+    }
+  }
+
+}
+
+.double-sec-container {
+  @extend %center-word;
+  text-align: center;
+}
+
+.howitworks {
+  position: relative;
+  float: left;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      padding-top: 0!important;
+      padding-bottom: 0!important;
+      font-size: 20px!important;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+.howitworks-sec {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &.employer {
+    margin-bottom: 0;
+  }
+
+
+}
+
+.howitworks-part {
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    &.employer,
+    &.employer-img,
+    &.employer-bottom {
+      justify-content: space-evenly;
+      width: 100%!important;
+      height: auto;
+      margin: 0;
+      img {
+        margin-bottom: 4vh;
+      }
+    }
+  }
+  @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    &.employer,
+    &.employer-img,
+    &.employer-bottom {
+      justify-content: space-evenly;
+      width: 100%!important;
+      height: auto;
+      margin: 0;
+      img {
+        margin-bottom: 4vh;
+      }
+    }
+  }
+  &.image {
+    width: 20%;
+    margin-right: 0px;
+    margin-left: 0px;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      order: 1;
+      width: 100%!important;
+      padding: 0 6vw 0 6vw;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      order: 1;
+      width: 100%!important;
+      padding: 0 6vw 0 6vw;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: auto; //min-height: 539px;
+    max-height: 539px;
+    object-fit: contain;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      width: 50%;
+      margin: auto;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      width: 50%;
+      margin: auto;
+    }
+    @media only screen and (max-width:512px) {
+      width: 100%;
+    }
+    @media only screen and (max-width:374px) {
+      width: 100%;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      width: 50%;
+    }
+  }
+
+  &.employer {
+    width: 30%; //height: 50vh;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-between;
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      margin-left: 0;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
+      //margin: 0;
+      &.responsiverhs,
+      &.responsivelhs {
+        padding: 0;
+      }
+    }
+  }
+  &.employer-img {
+    width: 40%; //height: 65vh;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-content: space-around;
+
+    img {
+      //width: 100%;
+      height: auto; //min-height: 200px!important;
+      object-fit: contain;
+      /*----responsive----*/
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        height: 100%;
+        min-height: 0px !important;
+      }
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        height: 100%;
+        min-height: 0px !important;
+      }
+    }
+  }
+  &.employer-bottom {
+    width: 50%;
+    height: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      margin-left: 0;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      margin-left: 20px;
+    }
+  }
+  &.responsivelhs {
+    padding-right: 30px;
+    padding-left: 60px;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      order: 2;
+      margin-top: 5vw;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      order: 2;
+      margin-top: 5vw;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  &.responsiverhs {
+    padding-right: 60px;
+    padding-left: 30px;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      order: 3;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      order: 3;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+
+}
+
+.handside-sec {
+  display: table;
+  width: 100%;
+  height: 18vh;
+
+  &.lhs-style {
+    float: right;
+    text-align: right;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      display: flex; //flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      display: flex; //flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    }
+    i {
+      float: right;
+      /*----responsive----*/
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        order: 1;
+      }
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        order: 1;
+      }
+    }
+  }
+  &.rhs-style {
+    float: left;
+    text-align: left;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      display: flex; //flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      display: flex; //flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    }
+  }
+
+  .howitworks-wordcontainer {
+    //display: table-cell;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+
+    &.lhs-style {
+      /*----responsive----*/
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        order: 2;
+        width: 65vw;
+      }
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        order: 2;
+        width: 65vw;
+      }
+      h3,
+      p {
+        text-align: right;
+        float: right;
+        /*----responsive----*/
+        @media only screen and (max-width: 1200px) and (orientation: portrait) {
+          float: left;
+          text-align: left!important;
+        }
+        @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+          float: left;
+          text-align: left!important;
+        }
+      }
+    }
+    &.rhs-style {
+      /*----responsive----*/
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        width: 65vw;
+      }
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        width: 65vw;
+      }
+      h3,
+      p {
+        text-align: left;
+        float: left;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      margin: 0px 0px 0px 0px;
+    }
+    p {
+      font-size: 13px;
+      margin-top: 8px;
+      /*----responsive----*/
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        margin-right: 5vw;
+      }
+      @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+        margin-right: 5vw;
+      }
+    }
+  }
+
+  i {
+    display: table-cell;
+    vertical-align: top;
+    width: 80px;
+    border: 2px solid #888888;
+    @include border-radius(50%);
+    float: left;
+    height: 80px;
+    text-align: center;
+    line-height: 76px;
+    font-size: 40px;
+    color: #888888;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    &:hover {
+      background: #33e5ff;
+      border-color: #33e5ff;
+      color: #ffffff;
+      transition: .7s;
+    }
+  }
+}
+
+.howitworks-background {
+  position: relative;
+  float: left;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+
+  &.dark {
+    background: rgba(207, 207, 207, 0.85);
+  }
+}
+
+.parallax-home {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/home/home-video.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+  opacity: 0;
+}
+
+#home-video {
+  //position: fixed;
+  width: auto;
+  max-width: initial;
+  height: 100vh;
+  will-change: transform, filter;
+  @media (min-aspect-ratio: 16/9) {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-aspect-ratio: 16/9) {
+    width: auto;
+    height: 100vh;
+  }
+  /*----IPad Pro responsive----*/
+  @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (hover: none) {
+    height: auto;
+  }
+  /*--------IPad & IPad Pro landscape---------*/
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+.parallax01 {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/home/banner1.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+.parallax02 {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/home/banner2.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+.parallax03 {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/home/banner3.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+.parallax-iframe {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/home/home-iframe.jpg");
+  filter: blur(4px);
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+
+.parallax-double01 {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/home/double.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+.parallax-double02 {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/home/double.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+.parallax-howitworks {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/home/howitworks.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+/*----responsive----*/
+
+@media only screen and (max-width: 1200px) and (orientation: portrait) {
+  .parallax-home,
+  .parallax01,
+  .parallax02,
+  .parallax03,
+  .double01,
+  .double02,
+  .parallax-howitworks {
+    background-attachment: initial;
+  }
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: .25;
+  position: absolute;
+}
+
+.home-overlay {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: .45;
+  position: absolute;
+}
+
+.home-youtube {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    
+  margin-left: 10%;
+  margin-right: 10%;
+  
+  iframe {
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      width: 100% !important;
+      height: 300px !important;
+    }
+    @media only screen and (max-width:512px) {
+      width: 90%!important;
+      height: 45%!important;
+      //transform: translate(5.5%, 0%);
+    }
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      //height: 200px;
+    }
+  }
+  p {
+    margin-bottom: 40px;
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      margin-bottom: 15px;
+    }
+  }
+  h3 {
+    @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.home-company-list {
+  display: flex;
+  justify-content: center;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width:512px) {
+    flex-direction: column;
+  }
+}
+
+.home-company {
+  max-width: 150px;
+  min-width: 150px;
+  max-height: 150px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  /*----IPad Pro responsive----*/
+  @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (hover: none) {
+    margin: 35px;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
+    margin: 0px;
+  }
+  @media only screen and (max-width:512px) {
+    max-width: 75px;
+    min-width: 75px;
+    max-height: 75px;
+    min-height: 75px;
+  }
+  @media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (orientation: landscape) {
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+  }
+  @media only screen and (max-device-width: 568px) and (orientation: landscape) {
+    max-width: 60px;
+    min-width: 60px;
+    max-height: 60px;
+    min-height: 60px;
+  }
+}
+
+.company-ipad-resp {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-stats {
+  margin: 0 90px;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    margin: 50px 90px;
+  }
+  @media only screen and (max-width:512px) {
+    margin: 50px 90px;
+  }
+
+  @media only screen and (max-width:374px) {
+    margin: 20px 90px;
+  }
+  h3 {
+    font-size: 100px;
+    font-weight: 900;
+    margin: 0;
+    color: #ffffff!important;
+    /*----responsive----*/
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      font-size: 150px!important;
+    }
+    @media only screen and (max-width:512px) {
+      font-size: 50px!important;
+    }
+    @media only screen and (min-width: 568px) and (max-width: 823px) and (orientation: landscape) {
+      font-size: 50px!important;
+    }
+  }
+  p {
+    text-align: right;
+    font-weight: 300;
+    color: #ffffff !important;
+  }
+}
+
+/*----------------------------------------------*/
+
+/*------------------COMINGSOON------------------*/
+
+/*----------------------------------------------*/
+
+.home-imgcontainer {
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &.comingsoon {
+    h3 {
+      font-weight: 600; //font-size: 72px;
+      font-size: 6.5vh;
+      /*----responsive----*/
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        font-size: 6vh;
+      }
+    }
+    p {
+      font-weight: 100; //font-size: 25px;
+      font-size: 2.5vh;
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        font-size: 2.1vh;
+      }
+    }
+    span {
+      position: relative;
+      text-align: center; //font-size: 30px;
+      font-size: 2.7vh;
+      font-weight: 100;
+      color: #ffffff;
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        font-size: 2.3vh;
+      }
+    }
+    @media only screen and (max-width: 1200px) and (orientation: portrait) {
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.home-wordcontainer {
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    &.comingsoon,
+    &.comingsoon-spacing {
+      height: auto;
+    }
+  }
+  &.comingsoon {
+    position: relative;
+  }
+}
+
+.lds-dual-ring {
+  position: absolute;
+  z-index: 0;
+  display: inline-block;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  border-color: #ffffff;
+  transition: 2.5s;
+
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 3s linear infinite;
+  /*----responsive----*/
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    width: 45vh;
+    height: 45vh;
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.color-overlay {
+  &.comingsoon {
+    opacity: 0.75;
+    background: #5a809a;
+  }
+}
+
+.share-bar {
+  &.comingsoon {
+    z-index: 1;
+    border: none;
+    padding: 0;
+    position: relative;
+    button {
+      margin-right: 1rem!important;
+      margin-left: 1rem!important;
+      background: transparent;
+      border: none;
+      /*----responsive----*/
+      @media only screen and (max-width: 1200px) and (orientation: portrait) {
+        margin-right: 0.2rem!important;
+        margin-left: 0.2rem!important;
+      }
+    }
+  }
+
+}
+
+ .linkedin-follow-btn {
+   display: inline-block;
+   
+   @media only screen and (max-width: 568px) {
+        text-align: right;
+        margin-top: 3px;
+        display: block;
+      }
+   @media only screen and (max-width: 320px) {
+        display: none;
+      }
+ }
+ 
+ #linkedinFollowBtn {
+   vertical-align: middle;
+   width: 100px;
+   height: 23px;
+   
+   @media only screen and (max-width: 568px) {
+        width: 95px;
+      }
+ }

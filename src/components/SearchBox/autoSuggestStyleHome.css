@@ -1,0 +1,140 @@
+.suggestionsContainerHome
+{ 
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+}
+
+.containerHome
+{
+    position: relative;
+}
+          
+.inputHome
+{
+    
+
+    box-shadow: none;
+
+    -o-box-shadow: none;
+
+    border: 0 !important;
+
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    padding-left: 50px;
+    padding-right: 40px;
+    
+    background-clip: padding-box;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    outline-offset: -2px;
+    -webkit-appearance: none;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    font: 400 13.3333px Arial;
+    border-width: 2px;
+    border-style: inset;
+    border-image: initial;
+    
+    overflow: hidden;
+
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #575757;
+    text-align: left;
+    background-color: #f4f4f7;
+
+    font-size: 16px;
+    
+    
+    /*
+    width:          100%;
+    height:         26px;
+    padding:        10px;
+    border:         1px solid gray;
+    border-radius:  4px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    */
+}
+          
+.inputFocusedHome 
+{
+    outline: none;
+}
+  
+.inputOpenHome
+{
+    border-bottom-left-radius:  0;
+    border-bottom-right-radius: 0;
+}
+  
+.suggestionsContainerHome
+{
+    display: none;
+}
+  
+.suggestionsContainerOpenHome 
+{
+    display:            block;
+    position:           absolute;
+    top:                35px;
+    width:              100%;
+    min-width:          160px;
+    background-color:   #FFFFFF;
+    border-radius:      0 0 4px 4px;
+    z-index:            2;
+    box-shadow:         0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip:    padding-box;
+    background: no-repeat;
+    font-size: 13px;
+    color: #888888;
+    background-color: #FFF;
+    border-radius: 8px;
+}
+  
+.suggestionsListHome
+{
+    margin:             0;
+    padding:            0;
+    list-style-type:    none;
+    max-height: 195px;
+    overflow-y: auto;
+}
+
+.suggestionHome 
+{
+    cursor:     pointer;
+    padding:    5px 5px;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.suggestionHighlightedHome 
+{
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.z-indexMin {
+    z-index: 0
+}

@@ -1,0 +1,707 @@
+[{
+		"subIndustry_list": [{
+				"salary": [144000.0, 180000.0, 220000.0, 240000.0, 280000.0, 320000.0, 400000.0, 500000.0, 600000.0, 750000.0, 800000.0, 900000.0, null, null, null],
+				"value": "Transactional Accounting",
+				"label": "Transactional Accounting"
+			}, {
+				"salary": [240000.0, 300000.0, 350000.0, 380000.0, 400000.0, 450000.0, 470000.0, 500000.0, 540000.0, 600000.0, 700000.0, 800000.0, 850000.0, 900000.0, 1000000.0],
+				"value": "Qualified Accounting",
+				"label": "Qualified Accounting"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1000000.0, 1200000.0, 1400000.0, 1600000.0, 1800000.0],
+				"value": "Group Financial Controller",
+				"label": "Group Financial Controller"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1500000.0, 1800000.0, 2250000.0, 2600000.0, 3000000.0],
+				"value": "CFO",
+				"label": "CFO"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1000000.0, 1150000.0, 1300000.0, 1450000.0, 1600000.0],
+				"value": "Head of Financial Planning and Analysis",
+				"label": "Head of Financial Planning and Analysis"
+			}, {
+				"salary": [160000.0, 190000.0, 220000.0, 240000.0, 390000.0, 540000.0, 720000.0, 860000.0, 1000000.0, 1300000.0, 1650000.0, 2000000.0, 2000000.0, 2000000.0, 2000000.0],
+				"value": "Treasury",
+				"label": "Treasury"
+			}, {
+				"salary": [200000.0, 250000.0, 300000.0, 360000.0, 450000.0, 540000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1600000.0, 2000000.0, 2000000.0, 2000000.0, 2000000.0],
+				"value": "Taxation",
+				"label": "Taxation"
+			}, {
+				"salary": [200000.0, 240000.0, 280000.0, 300000.0, 450000.0, 600000.0, 720000.0, 960000.0, 1200000.0, 1200000.0, 1600000.0, 2000000.0, 2250000.0, 3000000.0, 3000000.0],
+				"value": "Corporate Finance",
+				"label": "Corporate Finance"
+			}, {
+				"salary": [200000.0, 250000.0, 300000.0, 336000.0, 438000.0, 540000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1600000.0, 2000000.0, 2000000.0, 2000000.0, 2000000.0],
+				"value": "Investor Relations ",
+				"label": "Investor Relations "
+			}
+		],
+		"value": "Accounting and Finance",
+		"label": "Accounting and Finance"
+	}, {
+		"subIndustry_list": [{
+				"salary": [240000.0, 360000.0, 480000.0, 500000.0, 625000.0, 750000.0, 800000.0, 875000.0, 940000.0, 1000000.0, 1100000.0, 1250000.0, 1330000.0, 1400000.0, 1500000.0, null, null],
+				"value": "Financial Control\u2013Investment Banking",
+				"label": "Financial Control\u2013Investment Banking"
+			}, {
+				"salary": [240000.0, 370000.0, 500000.0, 550000.0, 625000.0, 750000.0, 800000.0, 900000.0, 1000000.0, 1200000.0, 1250000.0, 1300000.0, 1350000.0, 1400000.0, 1500000.0, null, null],
+				"value": "Management Reporting/FP&A",
+				"label": "Management Reporting/FP&A"
+			}, {
+				"salary": [240000.0, 370000.0, 500000.0, 550000.0, 625000.0, 750000.0, 800000.0, 950000.0, 1100000.0, 1200000.0, 1250000.0, 1300000.0, 1350000.0, 1400000.0, 1500000.0, null, null],
+				"value": "Regulatory Finance",
+				"label": "Regulatory Finance"
+			}, {
+				"salary": [300000.0, 400000.0, 500000.0, 520000.0, 725000.0, 950000.0, 975000.0, 1125000.0, 1200000.0, 1300000.0, 1350000.0, 1400000.0, 1450000.0, 1530000.0, 1600000.0, null, null],
+				"value": "Product Control",
+				"label": "Product Control"
+			}, {
+				"salary": [300000.0, 400000.0, 500000.0, 600000.0, 725000.0, 850000.0, 950000.0, 1000000.0, 1125000.0, 1250000.0, 1300000.0, 1400000.0, 1450000.0, 1540000.0, 1600000.0, null, null],
+				"value": "Valuations",
+				"label": "Valuations"
+			}, {
+				"salary": [300000.0, 450000.0, 520000.0, 600000.0, 750000.0, 900000.0, 1000000.0, 1100000.0, 1200000.0, 1250000.0, 1300000.0, 1350000.0, 1400000.0, 1450000.0, 1500000.0, null, null],
+				"value": "Tax",
+				"label": "Tax"
+			}, {
+				"salary": [300000.0, 450000.0, 520000.0, 600000.0, 750000.0, 800000.0, 900000.0, 1000000.0, 1100000.0, 1200000.0, 1300000.0, 1350000.0, 1400000.0, 1450000.0, 1500000.0, null, null],
+				"value": "Treasury",
+				"label": "Treasury"
+			}, {
+				"salary": [200000.0, 325000.0, 400000.0, 450000.0, 575000.0, 620000.0, 700000.0, 800000.0, 900000.0, 1000000.0, 1100000.0, 1200000.0, 1250000.0, 1300000.0, 1400000.0, null, null],
+				"value": "Project Accounting",
+				"label": "Project Accounting"
+			}, {
+				"salary": [180000.0, 240000.0, 270000.0, 300000.0, 380000.0, 400000.0, 500000.0, 600000.0, 650000.0, 700000.0, 800000.0, 900000.0, 1000000.0, 1100000.0, 1200000.0, null, null],
+				"value": "Fund Accounting-Investment Management",
+				"label": "Fund Accounting-Investment Management"
+			}, {
+				"salary": [180000.0, 240000.0, 270000.0, 300000.0, 450000.0, 550000.0, 600000.0, 700000.0, 750000.0, 800000.0, 850000.0, 880000.0, 920000.0, 960000.0, 1000000.0, null, null],
+				"value": "Corporate Accounting-Investment Management",
+				"label": "Corporate Accounting-Investment Management"
+			}, {
+				"salary": [240000.0, 360000.0, 480000.0, 500000.0, 625000.0, 680000.0, 750000.0, 800000.0, 900000.0, 1000000.0, 1050000.0, 1100000.0, 1120000.0, 1150000.0, 1200000.0, null, null],
+				"value": "Financial Control-Insurance",
+				"label": "Financial Control-Insurance"
+			}, {
+				"salary": [300000.0, 360000.0, 420000.0, 450000.0, 675000.0, 750000.0, 900000.0, 1000000.0, 1150000.0, 1250000.0, 1400000.0, 1500000.0, 1650000.0, 1800000.0, 1900000.0, null, null],
+				"value": "Internal Audit IBD",
+				"label": "Internal Audit IBD"
+			}, {
+				"salary": [320000.0, 360000.0, 380000.0, 400000.0, 480000.0, 525000.0, 650000.0, 750000.0, 825000.0, 950000.0, 1000000.0, 1100000.0, 1200000.0, 1300000.0, 1400000.0, null, null],
+				"value": "Internal Audit Investment Management",
+				"label": "Internal Audit Investment Management"
+			}, {
+				"salary": [320000.0, 360000.0, 380000.0, 400000.0, 480000.0, 525000.0, 650000.0, 750000.0, 825000.0, 950000.0, 1000000.0, 1100000.0, 1200000.0, 1300000.0, 1400000.0, null, null],
+				"value": "Internal Audit Insurance",
+				"label": "Internal Audit Insurance"
+			}, {
+				"salary": [240000.0, 360000.0, 480000.0, 500000.0, 700000.0, 800000.0, 900000.0, 1100000.0, 1200000.0, 1400000.0, 1500000.0, 1600000.0, 1750000.0, 1850000.0, 2000000.0, null, null],
+				"value": "Operational Risk",
+				"label": "Operational Risk"
+			}, {
+				"salary": [240000.0, 360000.0, 480000.0, 500000.0, 700000.0, 800000.0, 900000.0, 1100000.0, 1200000.0, 1400000.0, 1500000.0, 1600000.0, 1750000.0, 1850000.0, 2000000.0, null, null],
+				"value": "Market Risk",
+				"label": "Market Risk"
+			}, {
+				"salary": [240000.0, 360000.0, 480000.0, 500000.0, 700000.0, 800000.0, 900000.0, 1100000.0, 1200000.0, 1400000.0, 1500000.0, 1600000.0, 1750000.0, 1850000.0, 2000000.0, null, null],
+				"value": "Credit Risk",
+				"label": "Credit Risk"
+			}, {
+				"salary": [250000.0, 365000.0, 480000.0, 500000.0, 650000.0, 800000.0, 900000.0, 1100000.0, 1200000.0, 1400000.0, 1500000.0, 1600000.0, 1750000.0, 1850000.0, 2000000.0, null, null],
+				"value": "Quantitative Analysis",
+				"label": "Quantitative Analysis"
+			}, {
+				"salary": [300000.0, 400000.0, 450000.0, 500000.0, 600000.0, 750000.0, 950000.0, 1050000.0, 1175000.0, 1200000.0, 1400000.0, 1600000.0, 1750000.0, 1850000.0, 2000000.0, null, null],
+				"value": "Compliance IBD",
+				"label": "Compliance IBD"
+			}, {
+				"salary": [320000.0, 385000.0, 420000.0, 450000.0, 500000.0, 600000.0, 700000.0, 800000.0, 900000.0, 1000000.0, 1100000.0, 1300000.0, 1550000.0, 1800000.0, 2000000.0, null, null],
+				"value": "Compliance investment management",
+				"label": "Compliance investment management"
+			}, {
+				"salary": [300000.0, 400000.0, 450000.0, 500000.0, 700000.0, 900000.0, 1050000.0, 1200000.0, 1300000.0, 1450000.0, 1600000.0, 1750000.0, 1900000.0, 2050000.0, 2200000.0, null, null],
+				"value": "Compliance AML",
+				"label": "Compliance AML"
+			}, {
+				"salary": [180000.0, 240000.0, 270000.0, 300000.0, 450000.0, 550000.0, 600000.0, 650000.0, 720000.0, 780000.0, 840000.0, 950000.0, 1020000.0, 1100000.0, 1200000.0, null, null],
+				"value": "Operations Settlements & Corporate Actions",
+				"label": "Operations Settlements & Corporate Actions"
+			}, {
+				"salary": [300000.0, 375000.0, 420000.0, 450000.0, 600000.0, 800000.0, 900000.0, 1050000.0, 1150000.0, 1250000.0, 1300000.0, 1400000.0, 1450000.0, 1500000.0, 1600000.0, null, null],
+				"value": "Operations Trade & Sales Support",
+				"label": "Operations Trade & Sales Support"
+			}, {
+				"salary": [180000.0, 270000.0, 320000.0, 360000.0, 450000.0, 580000.0, 800000.0, 850000.0, 900000.0, 950000.0, 1000000.0, 1100000.0, 1200000.0, 1300000.0, 1400000.0, null, null],
+				"value": "Operations Client Services & Onboarding",
+				"label": "Operations Client Services & Onboarding"
+			}, {
+				"salary": [300000.0, 350000.0, 400000.0, 450000.0, 560000.0, 625000.0, 800000.0, 950000.0, 1050000.0, 1200000.0, 1300000.0, 1380000.0, 1450000.0, 1550000.0, 1600000.0, null, null],
+				"value": "Operations Project Operation",
+				"label": "Operations Project Operation"
+			}, {
+				"salary": [300000.0, 350000.0, 400000.0, 450000.0, 560000.0, 625000.0, 800000.0, 950000.0, 1050000.0, 1200000.0, 1300000.0, 1380000.0, 1450000.0, 1550000.0, 1600000.0, null, null],
+				"value": "Operation - Investment Management",
+				"label": "Operation - Investment Management"
+			}, {
+				"salary": [300000.0, 510000.0, 620000.0, 720000.0, 900000.0, 1200000.0, 1400000.0, 1600000.0, 1785000.0, 2000000.0, 2200000.0, 2300000.0, 2500000.0, 2600000.0, 2700000.0, null, null],
+				"value": "Corporate Finance",
+				"label": "Corporate Finance"
+			}, {
+				"salary": [480000.0, 560000.0, 600000.0, 665000.0, 750000.0, 850000.0, 960000.0, 1100000.0, 1320000.0, 1500000.0, 1700000.0, 1900000.0, 2000000.0, 2400000.0, 2750000.0, null, null],
+				"value": "Equity Research",
+				"label": "Equity Research"
+			}, {
+				"salary": [420000.0, 510000.0, 620000.0, 720000.0, 900000.0, 1200000.0, 1400000.0, 1600000.0, 1785000.0, 2000000.0, 2200000.0, 2300000.0, 2500000.0, 2600000.0, 2700000.0, null, null],
+				"value": "Sales & Trading ",
+				"label": "Sales & Trading "
+			}, {
+				"salary": [300000.0, 400000.0, 500000.0, 600000.0, 700000.0, 850000.0, 1000000.0, 1250000.0, 1400000.0, 1650000.0, 1750000.0, 1800000.0, 1900000.0, 2050000.0, 2200000.0, null, null],
+				"value": "Corporate Banking Relationship Manager",
+				"label": "Corporate Banking Relationship Manager"
+			}, {
+				"salary": [220000.0, 280000.0, 320000.0, 380000.0, 420000.0, 480000.0, 540000.0, 670000.0, 720000.0, 800000.0, 1000000.0, 1160000.0, 1400000.0, 1600000.0, 2000000.0, null, null],
+				"value": "Commercial Banking Relationship Management",
+				"label": "Commercial Banking Relationship Management"
+			}, {
+				"salary": [300000.0, 510000.0, 620000.0, 720000.0, 900000.0, 1200000.0, 1400000.0, 1600000.0, 1785000.0, 2000000.0, 2200000.0, 2300000.0, 2500000.0, 2600000.0, 2700000.0, null, null],
+				"value": "Structured & Project Finance",
+				"label": "Structured & Project Finance"
+			}, {
+				"salary": [300000.0, 400000.0, 500000.0, 600000.0, 700000.0, 850000.0, 1000000.0, 1250000.0, 1400000.0, 1650000.0, 1750000.0, 1800000.0, 1900000.0, 2050000.0, 2200000.0, null, null],
+				"value": "Transaction Banking, Trade & Commodity Finance",
+				"label": "Transaction Banking, Trade & Commodity Finance"
+			}, {
+				"salary": [180000.0, 240000.0, 300000.0, 390000.0, 4800000.0, 540000.0, 600000.0, 660000.0, 720000.0, 750000.0, 840000.0, 1080000.0, 1320000.0, 1440000.0, 1800000.0, null, null],
+				"value": "Asset Management - Finance",
+				"label": "Asset Management - Finance"
+			}, {
+				"salary": [240000.0, 300000.0, 360000.0, 420000.0, 480000.0, 600000.0, 720000.0, 840000.0, 960000.0, 1080000.0, 1380000.0, 1600000.0, 1800000.0, 2000000.0, 2500000.0, null, null],
+				"value": "Asset Management - Compliance",
+				"label": "Asset Management - Compliance"
+			}, {
+				"salary": [190000.0, 250000.0, 300000.0, 330000.0, 390000.0, 480000.0, 600000.0, 720000.0, 750000.0, 840000.0, 900000.0, 1020000.0, 1080000.0, 1200000.0, 1440000.0, null, null],
+				"value": "Asset Management - Operations ",
+				"label": "Asset Management - Operations "
+			}, {
+				"salary": [180000.0, 270000.0, 360000.0, 420000.0, 450000.0, 480000.0, 600000.0, 650000.0, 720000.0, 780000.0, 840000.0, 960000.0, 1050000.0, 1150000.0, 1380000.0, null, null],
+				"value": "Asset Management - Risk and Audit",
+				"label": "Asset Management - Risk and Audit"
+			}, {
+				"salary": [180000.0, 260000.0, 340000.0, 360000.0, 440000.0, 500000.0, 580000.0, 650000.0, 800000.0, 950000.0, 1000000.0, 1200000.0, 1400000.0, 1600000.0, 1700000.0, null, null],
+				"value": "Client Onboarding / KYC",
+				"label": "Client Onboarding / KYC"
+			}, {
+				"salary": [180000.0, 240000.0, 300000.0, 390000.0, 480000.0, 540000.0, 600000.0, 720000.0, 840000.0, 900000.0, 960000.0, 1050000.0, 1140000.0, 1440000.0, 1800000.0, null, null],
+				"value": "Fund Finance (PE & Hedge Fund)",
+				"label": "Fund Finance (PE & Hedge Fund)"
+			}, {
+				"salary": [300000.0, 500000.0, 650000.0, 700000.0, 800000.0, 950000.0, 1100000.0, 1300000.0, 1500000.0, 1600000.0, 1800000.0, 2050000.0, 2200000.0, 2400000.0, 2500000.0, null, null],
+				"value": "Investment Research",
+				"label": "Investment Research"
+			}, {
+				"salary": [null, null, null, null, 1000000.0, 1100000.0, 1200000.0, 1500000.0, 1700000.0, 2000000.0, 2200000.0, 2500000.0, 2700000.0, 3000000.0, 3500000.0, null, null],
+				"value": "Portfolio & Fund Management",
+				"label": "Portfolio & Fund Management"
+			}, {
+				"salary": [336000.0, 443000.0, 550000.0, 620000.0, 700000.0, 810000.0, 900000.0, 1000000.0, 1200000.0, 1400000.0, 1680000.0, 1800000.0, 2000000.0, 2400000.0, 3000000.0, null, null],
+				"value": "Institutional & Retail Fund-Sales & Distribution",
+				"label": "Institutional & Retail Fund-Sales & Distribution"
+			}, {
+				"salary": [300000.0, 500000.0, 650000.0, 700000.0, 800000.0, 950000.0, 1100000.0, 1300000.0, 1500000.0, 1600000.0, 1800000.0, 2050000.0, 2200000.0, 2400000.0, 2500000.0, null, null],
+				"value": "Private Banking",
+				"label": "Private Banking"
+			}, {
+				"salary": [420000.0, 570000.0, 650000.0, 720000.0, 850000.0, 1000000.0, 1110000.0, 1300000.0, 1400000.0, 1500000.0, 1700000.0, 1900000.0, 2100000.0, 2300000.0, 2700000.0, null, null],
+				"value": "Private Equity ",
+				"label": "Private Equity "
+			}
+		],
+		"value": "Financial Services",
+		"label": "Financial Services"
+	}, {
+		"subIndustry_list": [{
+				"salary": [360000.0, 420000.0, 450000.0, 480000.0, 600000.0, 720000.0, 800000.0, 850000.0, 900000.0, 970000.0, 1080000.0, 1150000.0, 1200000.0, 1250000.0, 1320000.0],
+				"value": "FO Developer",
+				"label": "FO Developer"
+			}, {
+				"salary": [204000.0, 252000.0, 280000.0, 300000.0, 360000.0, 420000.0, 450000.0, 510000.0, 550000.0, 600000.0, null, null, null, null, null],
+				"value": "Developer",
+				"label": "Developer"
+			}, {
+				"salary": [240000.0, 300000.0, 320000.0, 360000.0, 450000.0, 540000.0, 580000.0, 660000.0, 700000.0, 750000.0, 780000.0, 850000.0, 930000.0, 980000.0, 1080000.0],
+				"value": "Mobile Developer",
+				"label": "Mobile Developer"
+			}, {
+				"salary": [null, null, null, 480000.0, 600000.0, 720000.0, 800000.0, 900000.0, 950000.0, 1000000.0, 1080000.0, 1100000.0, 1140000.0, 1160000.0, 1200000.0],
+				"value": "Mobile Architect",
+				"label": "Mobile Architect"
+			}, {
+				"salary": [240000.0, 300000.0, 320000.0, 360000.0, 420000.0, 480000.0, 510000.0, 552000.0, 590000.0, 624000.0, null, null, null, null, null],
+				"value": "Analyst Programmer",
+				"label": "Analyst Programmer"
+			}, {
+				"salary": [null, null, null, 550000.0, 575000.0, 600000.0, 630000.0, 660000.0, 700000.0, 720000.0, null, null, null, null, null],
+				"value": "System Analyst",
+				"label": "System Analyst"
+			}, {
+				"salary": [480000.0, 510000.0, 520000.0, 540000.0, 690000.0, 840000.0, 900000.0, 1080000.0, 1200000.0, 1320000.0, 1400000.0, 1450000.0, 1500000.0, 1560000.0, 1680000.0],
+				"value": "Solution Architect",
+				"label": "Solution Architect"
+			}, {
+				"salary": [null, null, null, 660000.0, 780000.0, 900000.0, 920000.0, 990000.0, 1000000.0, 1080000.0, 1100000.0, 1130000.0, 1170000.0, 1200000.0, 1260000.0],
+				"value": "Application Development Manager",
+				"label": "Application Development Manager"
+			}, {
+				"salary": [360000.0, 510000.0, 600000.0, 660000.0, 690000.0, 720000.0, 730000.0, 750000.0, 760000.0, 770000.0, 780000.0, 790000.0, 800000.0, 810000.0, 820000.0],
+				"value": "Database Administrator ",
+				"label": "Database Administrator "
+			}, {
+				"salary": [480000.0, 510000.0, 520000.0, 540000.0, 630000.0, 720000.0, 740000.0, 780000.0, 800000.0, 820000.0, 840000.0, 890000.0, 990000.0, 1050000.0, 1140000.0],
+				"value": "Data Architect",
+				"label": "Data Architect"
+			}, {
+				"salary": [300000.0, 330000.0, 350000.0, 360000.0, 450000.0, 480000.0, 520000.0, 540000.0, 550000.0, 560000.0, null, null, null, null, null],
+				"value": "Network Administrator",
+				"label": "Network Administrator"
+			}, {
+				"salary": [300000.0, 360000.0, 400000.0, 420000.0, 510000.0, 560000.0, 600000.0, 690000.0, 720000.0, 750000.0, 780000.0, 820000.0, 870000.0, 910000.0, 960000.0],
+				"value": "Network Engineer",
+				"label": "Network Engineer"
+			}, {
+				"salary": [null, null, null, null, null, 900000.0, 920000.0, 950000.0, 990000.0, 1020000.0, 1080000.0, 1150000.0, 1290000.0, 1380000.0, 1500000.0],
+				"value": "Network Architect (CCIE)",
+				"label": "Network Architect (CCIE)"
+			}, {
+				"salary": [300000.0, 330000.0, 350000.0, 360000.0, 420000.0, 480000.0, null, null, null, null, null, null, null, null, null],
+				"value": "System Administrator",
+				"label": "System Administrator"
+			}, {
+				"salary": [300000.0, 360000.0, 400000.0, 420000.0, 500000.0, 570000.0, 720000.0, 800000.0, 960000.0, 1100000.0, 1200000.0, 1280000.0, 1350000.0, 1430000.0, 1500000.0],
+				"value": "Information Security",
+				"label": "Information Security"
+			}, {
+				"salary": [360000.0, 420000.0, 450000.0, 480000.0, 560000.0, 600000.0, 720000.0, 800000.0, 960000.0, 1100000.0, 1200000.0, 1350000.0, 1500000.0, 1650000.0, 1800000.0],
+				"value": "Cyber Security",
+				"label": "Cyber Security"
+			}, {
+				"salary": [null, null, null, 600000.0, 720000.0, 840000.0, 860000.0, 900000.0, 930000.0, 950000.0, 960000.0, 1030000.0, 1080000.0, 1120000.0, 1200000.0],
+				"value": "Infrastructre Manager",
+				"label": "Infrastructre Manager"
+			}, {
+				"salary": [144000.0, 204000.0, 230000.0, 264000.0, 372000.0, 480000.0, 495000.0, 510000.0, 525000.0, 540000.0, null, null, null, null, null],
+				"value": "UAT Analyst",
+				"label": "UAT Analyst"
+			}, {
+				"salary": [240000.0, 310000.0, 340000.0, 380000.0, 460000.0, 540000.0, 580000.0, 630000.0, 660000.0, 700000.0, 720000.0, 760000.0, 840000.0, 900000.0, 960000.0],
+				"value": "Business Analyst",
+				"label": "Business Analyst"
+			}, {
+				"salary": [null, null, null, 540000.0, 600000.0, 660000.0, 700000.0, 780000.0, 870000.0, 960000.0, 980000.0, 1000000.0, 1020000.0, 1050000.0, 1080000.0],
+				"value": "Proect Manager",
+				"label": "Proect Manager"
+			}, {
+				"salary": [null, null, null, null, null, 1020000.0, 1040000.0, 1080000.0, 1110000.0, 1180000.0, 1200000.0, 1250000.0, 1350000.0, 1420000.0, 1500000.0],
+				"value": "Project Director",
+				"label": "Project Director"
+			}, {
+				"salary": [null, null, null, null, null, 1140000.0, 1200000.0, 1280000.0, 1320000.0, 1400000.0, 1500000.0, 1650000.0, 1850000.0, 2000000.0, 2200000.0],
+				"value": "Programme Director",
+				"label": "Programme Director"
+			}, {
+				"salary": [null, null, null, 720000.0, 840000.0, 960000.0, 980000.0, 1020000.0, 1050000.0, 1080000.0, null, null, null, null, null],
+				"value": "IT Manager",
+				"label": "IT Manager"
+			}, {
+				"salary": [180000.0, 240000.0, 280000.0, 300000.0, 390000.0, 480000.0, null, null, null, null, null, null, null, null, null],
+				"value": "IT Helpdesk",
+				"label": "IT Helpdesk"
+			}, {
+				"salary": [300000.0, 360000.0, 400000.0, 420000.0, 450000.0, 480000.0, 500000.0, 540000.0, 580000.0, 600000.0, null, null, null, null, null],
+				"value": "Desktop Support Analyst",
+				"label": "Desktop Support Analyst"
+			}, {
+				"salary": [null, null, null, 540000.0, 600000.0, 660000.0, 680000.0, 750000.0, 800000.0, 840000.0, null, null, null, null, null],
+				"value": "Service Desk Manager",
+				"label": "Service Desk Manager"
+			}, {
+				"salary": [180000.0, 240000.0, 280000.0, 300000.0, 330000.0, 360000.0, 400000.0, 450000.0, 500000.0, 540000.0, null, null, null, null, null],
+				"value": "Developer / Programmer",
+				"label": "Developer / Programmer"
+			}, {
+				"salary": [180000.0, 270000.0, 320000.0, 360000.0, 420000.0, 480000.0, 500000.0, 540000.0, 565000.0, 600000.0, null, null, null, null, null],
+				"value": "Web Developer",
+				"label": "Web Developer"
+			}, {
+				"salary": [180000.0, 270000.0, 320000.0, 360000.0, 450000.0, 540000.0, 580000.0, 610000.0, 630000.0, 680000.0, 720000.0, 735000.0, 750000.0, 765000.0, 780000.0],
+				"value": "Mobile Developer",
+				"label": "Mobile Developer"
+			}, {
+				"salary": [null, null, null, 360000.0, 420000.0, 480000.0, 500000.0, 520000.0, 540000.0, 600000.0, null, null, null, null, null],
+				"value": "Analyst Programmer",
+				"label": "Analyst Programmer"
+			}, {
+				"salary": [240000.0, 300000.0, 330000.0, 360000.0, 450000.0, 540000.0, 580000.0, 610000.0, 650000.0, 660000.0, 700000.0, 710000.0, 720000.0, 740000.0, 780000.0],
+				"value": "Software Engineer",
+				"label": "Software Engineer"
+			}, {
+				"salary": [null, null, null, 360000.0, 432000.0, 504000.0, 540000.0, 582000.0, 620000.0, 660000.0, null, null, null, null, null],
+				"value": "System Analyst",
+				"label": "System Analyst"
+			}, {
+				"salary": [null, null, null, 480000.0, 570000.0, 660000.0, 700000.0, 780000.0, 810000.0, 900000.0, 960000.0, 1000000.0, 1050000.0, 1100000.0, 1140000.0],
+				"value": "IT Architect",
+				"label": "IT Architect"
+			}, {
+				"salary": [null, null, null, 480000.0, 552000.0, 624000.0, 650000.0, 700000.0, 720000.0, 780000.0, 816000.0, 850000.0, 888000.0, 920000.0, 960000.0],
+				"value": "Developement Manager / Team Lead",
+				"label": "Developement Manager / Team Lead"
+			}, {
+				"salary": [300000.0, 330000.0, 350000.0, 360000.0, 450000.0, 540000.0, 560000.0, 600000.0, 620000.0, 640000.0, 660000.0, 680000.0, 720000.0, 740000.0, 780000.0],
+				"value": "Database Administrator",
+				"label": "Database Administrator"
+			}, {
+				"salary": [156000.0, 222000.0, 260000.0, 288000.0, 384000.0, 480000.0, 500000.0, 520000.0, 540000.0, 560000.0, null, null, null, null, null],
+				"value": "Data Analyst",
+				"label": "Data Analyst"
+			}, {
+				"salary": [null, null, null, 420000.0, 480000.0, 540000.0, 580000.0, 600000.0, 630000.0, 680000.0, 720000.0, 760000.0, 870000.0, 950000.0, 1020000.0],
+				"value": "Data Architect /Scientist",
+				"label": "Data Architect /Scientist"
+			}, {
+				"salary": [180000.0, 258000.0, 300000.0, 336000.0, 408000.0, 480000.0, 500000.0, 510000.0, 520000.0, 540000.0, 720000.0, 900000.0, 1080000.0, 1170000.0, 1260000.0],
+				"value": "Business Intelligence Developer",
+				"label": "Business Intelligence Developer"
+			}, {
+				"salary": [180000.0, 240000.0, 280000.0, 300000.0, 350000.0, 400000.0, 420000.0, 480000.0, 500000.0, 540000.0, null, null, null, null, null],
+				"value": "IT Helpdesk / Support Analyst",
+				"label": "IT Helpdesk / Support Analyst"
+			}, {
+				"salary": [null, null, null, 420000.0, 450000.0, 480000.0, 500000.0, 520000.0, 540000.0, 580000.0, 600000.0, 630000.0, 690000.0, 730000.0, 780000.0],
+				"value": "IT Trainer",
+				"label": "IT Trainer"
+			}, {
+				"salary": [null, null, null, 420000.0, 510000.0, 600000.0, 620000.0, 640000.0, 660000.0, 700000.0, 720000.0, 780000.0, 810000.0, 860000.0, 900000.0],
+				"value": "Service Desk / IT Operation Manager",
+				"label": "Service Desk / IT Operation Manager"
+			}, {
+				"salary": [216000.0, 288000.0, 320000.0, 360000.0, 400000.0, 420000.0, 480000.0, 510000.0, 525000.0, 540000.0, null, null, null, null, null],
+				"value": "System / Network Administrator",
+				"label": "System / Network Administrator"
+			}, {
+				"salary": [null, null, null, 480000.0, 570000.0, 660000.0, 700000.0, 720000.0, 750000.0, 800000.0, 840000.0, 880000.0, 900000.0, 930000.0, 960000.0],
+				"value": "Infrastruture Manager",
+				"label": "Infrastruture Manager"
+			}, {
+				"salary": [240000.0, 300000.0, 330000.0, 360000.0, 450000.0, 540000.0, 600000.0, 630000.0, 660000.0, 730000.0, 780000.0, 820000.0, 870000.0, 920000.0, 960000.0],
+				"value": "Network Engineer",
+				"label": "Network Engineer"
+			}, {
+				"salary": [null, null, null, null, null, 600000.0, 700000.0, 780000.0, 850000.0, 900000.0, 960000.0, 1100000.0, 1200000.0, 1300000.0, 1440000.0],
+				"value": "Network Architect",
+				"label": "Network Architect"
+			}, {
+				"salary": [null, null, null, 600000.0, 660000.0, 720000.0, 780000.0, 870000.0, 950000.0, 1020000.0, null, null, null, null, null],
+				"value": "Network Manager",
+				"label": "Network Manager"
+			}, {
+				"salary": [300000.0, 360000.0, 400000.0, 420000.0, 480000.0, 540000.0, 560000.0, 582000.0, 600000.0, 624000.0, null, null, null, null, null],
+				"value": "Information Security Analyst / Specialist",
+				"label": "Information Security Analyst / Specialist"
+			}, {
+				"salary": [null, null, null, 480000.0, 570000.0, 660000.0, 750000.0, 780000.0, 810000.0, 900000.0, 960000.0, 1000000.0, 1020000.0, 1050000.0, 1080000.0],
+				"value": "Information Security / Cyber Security ",
+				"label": "Information Security / Cyber Security "
+			}, {
+				"salary": [156000.0, 188000.0, 200000.0, 220000.0, 290000.0, 360000.0, 380000.0, 420000.0, 440000.0, 480000.0, null, null, null, null, null],
+				"value": "UAT Analyst",
+				"label": "UAT Analyst"
+			}, {
+				"salary": [168000.0, 216000.0, 230000.0, 264000.0, 300000.0, 324000.0, 384000.0, 522000.0, 600000.0, 660000.0, null, null, null, null, null],
+				"value": "Business Analyst",
+				"label": "Business Analyst"
+			}, {
+				"salary": [216000.0, 258000.0, 280000.0, 300000.0, 330000.0, 366000.0, 432000.0, 480000.0, 546000.0, 600000.0, 660000.0, 750000.0, 810000.0, 900000.0, 960000.0],
+				"value": "Project Manager",
+				"label": "Project Manager"
+			}, {
+				"salary": [240000.0, 270000.0, 285000.0, 300000.0, 330000.0, 366000.0, 432000.0, 490000.0, 546000.0, 600000.0, 660000.0, 750000.0, 810000.0, 900000.0, 960000.0],
+				"value": "Functional Consultant",
+				"label": "Functional Consultant"
+			}, {
+				"salary": [null, null, null, 300000.0, 360000.0, 420000.0, 480000.0, 510000.0, 560000.0, 580000.0, 600000.0, 750000.0, 840000.0, 920000.0, 1080000.0],
+				"value": "IT Business Process Re-Engineering",
+				"label": "IT Business Process Re-Engineering"
+			}, {
+				"salary": [216000.0, 258000.0, 280000.0, 300000.0, 330000.0, 366000.0, 432000.0, 546000.0, 600000.0, 660000.0, null, null, null, null, null],
+				"value": "ERP Specialist",
+				"label": "ERP Specialist"
+			}, {
+				"salary": [null, null, null, 420000.0, 510000.0, 600000.0, 650000.0, 720000.0, 780000.0, 810000.0, 840000.0, 900000.0, 960000.0, 1000000.0, 1080000.0],
+				"value": "ERP / System Manager",
+				"label": "ERP / System Manager"
+			}, {
+				"salary": [null, null, null, 360000.0, 480000.0, 600000.0, 650000.0, 720000.0, 780000.0, 860000.0, 960000.0, 1050000.0, 1110000.0, 1200000.0, 1260000.0],
+				"value": "IT Change and Transformation Manager",
+				"label": "IT Change and Transformation Manager"
+			}, {
+				"salary": [null, null, null, null, null, 720000.0, 780000.0, 830000.0, 900000.0, 1000000.0, 1080000.0, 1130000.0, 1190000.0, 1250000.0, 1300000.0],
+				"value": "Project / Programme Director",
+				"label": "Project / Programme Director"
+			}, {
+				"salary": [216000.0, 258000.0, 280000.0, 300000.0, 330000.0, 360000.0, 420000.0, 460000.0, 540000.0, 660000.0, 800000.0, 960000.0, 1110000.0, 1200000.0, 1260000.0],
+				"value": "Pre-Sales Consultant ",
+				"label": "Pre-Sales Consultant "
+			}, {
+				"salary": [null, null, null, 420000.0, 510000.0, 600000.0, 650000.0, 720000.0, 780000.0, 810000.0, 840000.0, 880000.0, 930000.0, 960000.0, 1020000.0],
+				"value": "IT Manager",
+				"label": "IT Manager"
+			}, {
+				"salary": [null, null, null, null, null, 780000.0, 820000.0, 870000.0, 920000.0, 940000.0, 960000.0, 1050000.0, 1140000.0, 1250000.0, 1320000.0],
+				"value": "IT Director",
+				"label": "IT Director"
+			}
+		],
+		"value": "Information Technology",
+		"label": "Information Technology"
+	}, {
+		"subIndustry_list": [{
+				"salary": [168000.0, 204000.0, 220000.0, 240000.0, 250000.0, 260000.0, null, null, null, null, null, null, null, null, null],
+				"value": "HR Assistant",
+				"label": "HR Assistant"
+			}, {
+				"salary": [240000.0, 270000.0, 285000.0, 300000.0, 330000.0, 360000.0, null, null, null, null, null, null, null, null, null],
+				"value": "HR Officer",
+				"label": "HR Officer"
+			}, {
+				"salary": [340000.0, 360000.0, 370000.0, 400000.0, 420000.0, 440000.0, 450000.0, 495000.0, 520000.0, 550000.0, null, null, null, null, null],
+				"value": "HR Assistant Manager",
+				"label": "HR Assistant Manager"
+			}, {
+				"salary": [null, null, null, null, null, 600000.0, 650000.0, 700000.0, 750000.0, 800000.0, 820000.0, 840000.0, 860000.0, 880000.0, 900000.0],
+				"value": "HR Manager",
+				"label": "HR Manager"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1000000.0, 1100000.0, 1200000.0, 1300000.0, 1400000.0],
+				"value": "HR Director",
+				"label": "HR Director"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1200000.0, 1300000.0, 1350000.0, 1400000.0, 1500000.0],
+				"value": "HR Vice President",
+				"label": "HR Vice President"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1500000.0, 1700000.0, 1850000.0, 2000000.0, 2200000.0],
+				"value": "HR Senior Vice President",
+				"label": "HR Senior Vice President"
+			}, {
+				"salary": [200000.0, 220000.0, 240000.0, 300000.0, 330000.0, 360000.0, 580000.0, 630000.0, 680000.0, 720000.0, 735000.0, 740000.0, 750000.0, 800000.0, 900000.0],
+				"value": "Compensation & Benefit Executive",
+				"label": "Compensation & Benefit Executive"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1000000.0, 1100000.0, 1200000.0, 1300000.0, 1400000.0],
+				"value": "Compensation & Benefit Director",
+				"label": "Compensation & Benefit Director"
+			}, {
+				"salary": [null, null, null, null, null, 400000.0, 450000.0, 500000.0, 550000.0, 600000.0, null, null, null, null, null],
+				"value": "Recruiter",
+				"label": "Recruiter"
+			}, {
+				"salary": [240000.0, 260000.0, 280000.0, 360000.0, 400000.0, 420000.0, 480000.0, 500000.0, 550000.0, 600000.0, null, null, null, null, null],
+				"value": "Campus Recruiter",
+				"label": "Campus Recruiter"
+			}, {
+				"salary": [null, null, null, null, null, 700000.0, 750000.0, 800000.0, 850000.0, 900000.0, null, null, null, null, null],
+				"value": "Talent Acquisition / Recruitment Manager",
+				"label": "Talent Acquisition / Recruitment Manager"
+			}, {
+				"salary": [null, null, null, null, null, 700000.0, 750000.0, 800000.0, 850000.0, 900000.0, null, null, null, null, null],
+				"value": "Director of Talent Acquisition",
+				"label": "Director of Talent Acquisition"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1000000.0, 1100000.0, 1200000.0, 1300000.0, 1400000.0],
+				"value": "Director of Campus Recruitment",
+				"label": "Director of Campus Recruitment"
+			}, {
+				"salary": [180000.0, 210000.0, 220000.0, 240000.0, 300000.0, 360000.0, 440000.0, 500000.0, 600000.0, 660000.0, 700000.0, 780000.0, 840000.0, 880000.0, 900000.0],
+				"value": "Training ",
+				"label": "Training "
+			}, {
+				"salary": [260000.0, 280000.0, 290000.0, 300000.0, 320000.0, 350000.0, 400000.0, 500000.0, 550000.0, 600000.0, 680000.0, 750000.0, 800000.0, 850000.0, 900000.0],
+				"value": "HRIS",
+				"label": "HRIS"
+			}, {
+				"salary": [160000.0, 195000.0, 210000.0, 230000.0, 240000.0, 250000.0, null, null, null, null, null, null, null, null, null],
+				"value": "HR Assistant",
+				"label": "HR Assistant"
+			}, {
+				"salary": [220000.0, 250000.0, 265000.0, 280000.0, 310000.0, 340000.0, null, null, null, null, null, null, null, null, null],
+				"value": "HR Officer",
+				"label": "HR Officer"
+			}, {
+				"salary": [300000.0, 320000.0, 330000.0, 340000.0, 370000.0, 400000.0, 420000.0, 460000.0, 480000.0, 500000.0, null, null, null, null, null],
+				"value": "HR Assistant Manager",
+				"label": "HR Assistant Manager"
+			}, {
+				"salary": [320000.0, 340000.0, 350000.0, 380000.0, 390000.0, 430000.0, 480000.0, 550000.0, 600000.0, 650000.0, 720000.0, 750000.0, 770000.0, 800000.0, 840000.0],
+				"value": "HR Manager",
+				"label": "HR Manager"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 900000.0, 1000000.0, 1200000.0, 1400000.0, 1500000.0],
+				"value": "HR Director",
+				"label": "HR Director"
+			}, {
+				"salary": [180000.0, 200000.0, 220000.0, 240000.0, 280000.0, 320000.0, null, null, null, null, null, null, null, null, null],
+				"value": "Compensation & Benefit Executive",
+				"label": "Compensation & Benefit Executive"
+			}, {
+				"salary": [null, null, null, null, null, 480000.0, 550000.0, 600000.0, 650000.0, 700000.0, 720000.0, 740000.0, 760000.0, 800000.0, 840000.0],
+				"value": "Compensation & Benefit Manager",
+				"label": "Compensation & Benefit Manager"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 1000000.0, 1100000.0, 1250000.0, 1380000.0, 1500000.0],
+				"value": "Compensation & Benefit Director",
+				"label": "Compensation & Benefit Director"
+			}, {
+				"salary": [200000.0, 250000.0, 280000.0, 300000.0, 350000.0, 400000.0, 420000.0, 450000.0, 480000.0, 540000.0, null, null, null, null, null],
+				"value": "Recruiter",
+				"label": "Recruiter"
+			}, {
+				"salary": [null, null, null, null, null, 600000.0, 630000.0, 660000.0, 690000.0, 720000.0, 740000.0, 760000.0, 780000.0, 840000.0, 900000.0],
+				"value": "Talent Acquisition / Recruitment Manager",
+				"label": "Talent Acquisition / Recruitment Manager"
+			}, {
+				"salary": [null, null, null, null, null, null, null, null, null, null, 960000.0, 1000000.0, 1080000.0, 1150000.0, 1200000.0],
+				"value": "Director of Talent Acquisition",
+				"label": "Director of Talent Acquisition"
+			}, {
+				"salary": [180000.0, 210000.0, 225000.0, 240000.0, 290000.0, 340000.0, 400000.0, 480000.0, 540000.0, 600000.0, 650000.0, 690000.0, 720000.0, 780000.0, 840000.0],
+				"value": "Training",
+				"label": "Training"
+			}, {
+				"salary": [240000.0, 260000.0, 280000.0, 300000.0, 350000.0, 400000.0, 440000.0, 480000.0, 550000.0, 600000.0, 650000.0, 700000.0, 720000.0, 780000.0, 840000.0],
+				"value": "HRIS ",
+				"label": "HRIS "
+			}
+		],
+		"value": "Human Resources",
+		"label": "Human Resources"
+	}, {
+		"subIndustry_list": [{
+				"salary": [144000.0, 180000.0, 192000.0, 240000.0, 300000.0, 360000.0, 420000.0, 468000.0, 520000.0, 576000.0, 600000.0, 630000.0, 660000.0, 690000.0, 720000.0],
+				"value": "Private Practice",
+				"label": "Private Practice"
+			}, {
+				"salary": [204000.0, 240000.0, 252000.0, 300000.0, 330000.0, 380000.0, 420000.0, 450000.0, 480000.0, 573000.0, 600000.0, 696000.0, 750000.0, 840000.0, 900000.0],
+				"value": "Financial Services",
+				"label": "Financial Services"
+			}, {
+				"salary": [168000.0, 216000.0, 264000.0, 300000.0, 360000.0, 420000.0, 450000.0, 540000.0, 600000.0, 660000.0, 700000.0, 720000.0, 750000.0, 790000.0, 840000.0],
+				"value": "In-house Commerce",
+				"label": "In-house Commerce"
+			}, {
+				"salary": [144000.0, 192000.0, 220000.0, 240000.0, 290000.0, 360000.0, null, null, null, null, null, null, null, null, null],
+				"value": "Domestic Paralegal",
+				"label": "Domestic Paralegal"
+			}, {
+				"salary": [216000.0, 288000.0, 300000.0, 360000.0, 390000.0, 432000.0, 480000.0, 504000.0, 530000.0, 576000.0, null, null, null, null, null],
+				"value": "International Paralegal",
+				"label": "International Paralegal"
+			}, {
+				"salary": [180000.0, 222000.0, 240000.0, 264000.0, 320000.0, 360000.0, 420000.0, 480000.0, null, null, null, null, null, null, null],
+				"value": "Translator",
+				"label": "Translator"
+			}, {
+				"salary": [216000.0, 246000.0, 276000.0, 300000.0, 390000.0, 480000.0, 540000.0, 600000.0, 680000.0, 750000.0, 800000.0, 850000.0, 900000.0, 950000.0, 1000000.0],
+				"value": "Knowledge Management",
+				"label": "Knowledge Management"
+			}, {
+				"salary": [150000.0, 215000.0, 240000.0, 280000.0, 318000.0, 360000.0, 390000.0, 420000.0, 460000.0, 480000.0, 516000.0, 570000.0, 618000.0, 660000.0, 720000.0],
+				"value": "Domestic Paralegal",
+				"label": "Domestic Paralegal"
+			}, {
+				"salary": [180000.0, 258000.0, 330000.0, 380000.0, 405000.0, 430000.0, 460000.0, 490000.0, 530000.0, 576000.0, 636000.0, 680000.0, 726000.0, 780000.0, 816000.0],
+				"value": "International Paralegal",
+				"label": "International Paralegal"
+			}, {
+				"salary": [180000.0, 240000.0, 260000.0, 336000.0, 360000.0, 390000.0, 440000.0, 462000.0, 490000.0, 540000.0, 600000.0, 650000.0, 690000.0, 730000.0, 780000.0],
+				"value": "PRC-based Paralegal",
+				"label": "PRC-based Paralegal"
+			}, {
+				"salary": [null, null, null, null, null, 420000.0, 450000.0, 480000.0, 510000.0, 540000.0, 600000.0, 630000.0, 660000.0, 690000.0, 720000.0],
+				"value": "Domestic Legal Manager",
+				"label": "Domestic Legal Manager"
+			}, {
+				"salary": [null, null, null, null, null, 480000.0, 530000.0, 588000.0, 630000.0, 696000.0, 750000.0, 820000.0, 885000.0, 930000.0, 1020000.0],
+				"value": "International Legal Manager",
+				"label": "International Legal Manager"
+			}, {
+				"salary": [null, null, null, null, null, 480000.0, 520000.0, 570000.0, 620000.0, 660000.0, 720000.0, 750000.0, 780000.0, 810000.0, 840000.0],
+				"value": "PRC-based Legal Manager",
+				"label": "PRC-based Legal Manager"
+			}, {
+				"salary": [144000.0, 204000.0, 264000.0, 300000.0, 360000.0, 420000.0, 470000.0, 510000.0, 560000.0, 600000.0, 660000.0, 720000.0, 810000.0, 870000.0, 1020000.0],
+				"value": "HK Listed Paralegal",
+				"label": "HK Listed Paralegal"
+			}, {
+				"salary": [168000.0, 264000.0, 300000.0, 360000.0, 390000.0, 450000.0, 480000.0, 555000.0, 610000.0, 660000.0, 750000.0, 800000.0, 950000.0, 1050000.0, 1200000.0],
+				"value": "Mulitnational Corporation Paralegal",
+				"label": "Mulitnational Corporation Paralegal"
+			}, {
+				"salary": [870000.0, 936000.0, 978000.0, 1080000.0, 1170000.0, 1248000.0, 1296000.0, 1440000.0, 1680000.0, null, null, null, null, null, null],
+				"value": "International Law Firms",
+				"label": "International Law Firms"
+			}, {
+				"salary": [978000.0, 1038000.0, 1134000.0, 1302000.0, 1356000.0, 1476000.0, 1698000.0, 1766000.0, 1900000.0, null, null, null, null, null, null],
+				"value": "Magic Circle Firms",
+				"label": "Magic Circle Firms"
+			}, {
+				"salary": [480000.0, 570000.0, 600000.0, 660000.0, 690000.0, 720000.0, 780000.0, 840000.0, 900000.0, 960000.0, 1020000.0, 1080000.0, 1160000.0, 1200000.0, 1260000.0],
+				"value": "Non Listed Companies Non Transactional ",
+				"label": "Non Listed Companies Non Transactional "
+			}, {
+				"salary": [600000.0, 690000.0, 720000.0, 780000.0, 840000.0, 870000.0, 930000.0, 960000.0, 990000.0, 1020000.0, 1100000.0, 1180000.0, 1230000.0, 1400000.0, 1500000.0],
+				"value": "Non Listed Companies Transactional ",
+				"label": "Non Listed Companies Transactional "
+			}, {
+				"salary": [540000.0, 600000.0, 660000.0, 780000.0, 800000.0, 840000.0, 880000.0, 920000.0, 960000.0, 1000000.0, 1100000.0, 1200000.0, 1380000.0, 1550000.0, 1800000.0],
+				"value": "HK Listed Companies Non Transactional",
+				"label": "HK Listed Companies Non Transactional"
+			}, {
+				"salary": [660000.0, 780000.0, 810000.0, 900000.0, 960000.0, 990000.0, 1050000.0, 1110000.0, 1160000.0, 1200000.0, 1320000.0, 1500000.0, 1740000.0, 2000000.0, 2280000.0],
+				"value": "HK Listed Companies Transactional",
+				"label": "HK Listed Companies Transactional"
+			}, {
+				"salary": [600000.0, 750000.0, 7800000.0, 900000.0, 930000.0, 960000.0, 1080000.0, 1120000.0, 1140000.0, 1180000.0, 1200000.0, 1440000.0, 1660000.0, 1900000.0, 2180000.0],
+				"value": "Multinationals",
+				"label": "Multinationals"
+			}, {
+				"salary": [480000.0, 530000.0, 600000.0, 720000.0, 780000.0, 840000.0, 900000.0, 1080000.0, 1150000.0, 1200000.0, 1320000.0, 1380000.0, 1410000.0, 1500000.0, 1620000.0],
+				"value": "Insurance Houses",
+				"label": "Insurance Houses"
+			}, {
+				"salary": [600000.0, 780000.0, 850000.0, 900000.0, 990000.0, 1040000.0, 1100000.0, 1170000.0, 1200000.0, 1350000.0, 1440000.0, 1500000.0, 1600000.0, 1700000.0, 1800000.0],
+				"value": "Asset Management & Other Buy Side Houses",
+				"label": "Asset Management & Other Buy Side Houses"
+			}, {
+				"salary": [720000.0, 840000.0, 900000.0, 950000.0, 1080000.0, 1200000.0, 1320000.0, 1400000.0, 1450000.0, 1500000.0, 160000.0, 1800000.0, 1900000.0, 2050000.0, 2160000.0],
+				"value": "Global Banks",
+				"label": "Global Banks"
+			}, {
+				"salary": [480000.0, 540000.0, 660000.0, 690000.0, 750000.0, 840000.0, 890000.0, 930000.0, 960000.0, 1050000.0, 1080000.0, 1140000.0, 1200000.0, 1260000.0, 1320000.0],
+				"value": "Local Banks",
+				"label": "Local Banks"
+			}, {
+				"salary": [540000.0, 560000.0, 600000.0, 660000.0, 720000.0, 760000.0, 830000.0, 960000.0, 1000000.0, 1100000.0, 1200000.0, 1400000.0, 1580000.0, 1800000.0, 2200000.0],
+				"value": "Chinese Investment Banks",
+				"label": "Chinese Investment Banks"
+			}, {
+				"salary": [480000.0, 540000.0, 620000.0, 720000.0, 780000.0, 840000.0, 880000.0, 930000.0, 960000.0, 1020000.0, 1150000.0, 1320000.0, 1410000.0, 1600000.0, 1800000.0],
+				"value": "Financial Regulators",
+				"label": "Financial Regulators"
+			}
+		],
+		"value": "Legal",
+		"label": "Legal"
+	}
+]

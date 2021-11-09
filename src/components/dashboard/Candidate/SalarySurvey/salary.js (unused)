@@ -1,0 +1,19 @@
+import React from "react";
+
+export const salaryData = [
+  {name: '1', Dataset1: 15000, Dataset2: 20000},
+  {name: '2', Dataset1: 22500, Dataset2: 25000},
+	{name: '3', Dataset1: 26700, Dataset2: 27500},
+	{name: '4', Dataset1: 30000, Dataset2: 30000},
+	{name: '5', Dataset1: 35000, Dataset2: 37500},
+	{name: '6', Dataset1: 40000, Dataset2: 45000},
+	{name: '7', Dataset1: 41700, Dataset2: 48400},
+	{name: '8', Dataset1: 45000, Dataset2: 50900},
+	{name: '9', Dataset1: 47100, Dataset2: 54200},
+	{name: '10', Dataset1: 50000, Dataset2: 55000},
+	{name: '11', Dataset1: 0, Dataset2: 58400},
+	{name: '12', Dataset1: 0, Dataset2: 59200},
+	{name: '13', Dataset1: 0, Dataset2: 60000},
+	{name: '14', Dataset1: 0, Dataset2: 61700},
+	{name: '15+', Dataset1: 0, Dataset2: 65000}
+];

@@ -1,0 +1,18 @@
+
+.bg-blue-popup-status {
+    background-color: #3f51b5;
+}
+
+.candidate-popup-content {
+    width: 900px;
+}
+/*----------------------------------------------*/
+
+/*------------------RESPONSIVE------------------*/
+
+/*----------------------------------------------*/
+@media only screen and (max-width:1200px) {
+    .candidate-popup-content {
+        width: calc(80vw);
+    }
+}

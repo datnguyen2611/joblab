@@ -1,0 +1,93 @@
+/*Footer Styles*/
+
+.app-footer {
+  padding: 0 32px;
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(space-between);
+  @include box-shadow(0 0px 5px 0 rgba($black, 0.26));
+  background-color: $white;
+  color: $light-gray;
+  min-height: $footer-height;
+  height: $footer-height;
+  max-height: $footer-height;
+  z-index: 100;
+
+  .jr-link {
+    color: $sidebar-text-color;
+    &:hover {
+      color: $sidebar-hover-color;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+    padding: 0 20px;
+    min-height: $responsive-footer-height;
+    height: $responsive-footer-height;
+    max-height: $responsive-footer-height;
+  }
+}
+
+.footer-left {
+  span {
+    padding-right: 40px;
+      font-size: 10px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    span {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+.footer-left-list {
+      margin-top: 5px;
+      
+      @media only screen and (max-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  span {
+    text-align: right;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  @media only screen and (max-width: 1200px) {
+    text-align: center;
+    width: 100%;
+    span {
+      text-align: center;
+    }
+  }
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: flex-end;
+  i {
+    margin: 15px 0 5px 40px;
+    font-size: 20px;
+    color: #00bcd4;
+    transition: 1s;
+    &:hover {
+      color: #008a9b;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    justify-content: center;
+    i {
+      margin: 5px 20px 5px 20px;
+    }
+  }
+}
+

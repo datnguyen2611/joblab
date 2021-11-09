@@ -1,0 +1,149 @@
+.app-wrapper {
+    &.termsofuse {
+        padding: 0!important;
+        background: white!important;
+    }
+}
+.color-overlay {
+    &.termsofuse {
+        background-color: #006774;
+    }
+}
+.termsofuse-padding {
+    margin: auto;
+    max-width: 70%;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background: white;
+    //box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    
+    &.faq {
+        padding-top: 0;
+    }
+    
+    .termofuse-wordbox {
+        max-width: 800px;
+        margin: auto;
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 50px 0 20px 0;
+            color: #00bcd4;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-top: 50px;
+            color: #00bcd4;
+        }
+        ul, li {
+            margin: 16px auto;
+        }
+        ul li {
+            color: #252525;
+        }
+        ul ul {
+            list-style-type: circle;
+        }
+        p {
+            color: #252525;
+        }
+        span {
+            //color: #252525;
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 60px;
+            color: #00bcd4;
+        }
+        a {
+            color: #00bcd4;
+            cursor: pointer;
+            &:hover {
+                color: #009aad;
+            }
+        }
+        .terms-i {
+            padding-top: 30px;
+            &.cookies {
+                span {
+                    line-height: 40px;
+                }
+            }
+        }
+        .privacy-span {
+            padding-top: 20px;
+            span {
+                line-height: 40px;
+            }
+        }
+    }
+}
+.termsofuse-imgcontainer {
+    position: relative;
+    width: 100%;
+    
+    img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: 100% 65%;
+    }
+    
+    &.privacy {
+        img {
+            object-position: 0 80%;
+        }
+    }
+    
+    &.faq {
+        img {
+            object-position: 0% 0%;
+        }
+    }
+}
+.termsofuse-wordcontainer {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h3 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        z-index: 1;
+        max-width: 70%;
+    }
+}
+
+/*----------------------------------------------*/
+
+/*------------------RESPONSIVE------------------*/
+
+/*----------------------------------------------*/
+
+@media only screen and (max-width:1200px) {
+    
+}
+
+
+@media only screen and (max-width:700px) {
+    .termsofuse-imgcontainer {
+        img {
+            width: auto;
+        }
+    }
+    .termsofuse-padding {
+        max-width: 100%;
+        .termofuse-wordbox {
+            margin: 25px;
+            h2 {
+                padding: initial;
+            }
+        }
+    }
+}

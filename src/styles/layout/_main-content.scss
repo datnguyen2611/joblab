@@ -1,0 +1,37 @@
+/*Main Content Styles*/
+.app-main-content {
+  flex: 1;
+  width: 100%;
+}
+
+.app-wrapper {
+  padding: 30px;
+  width: 100%;
+
+  @media screen and (max-width: 575px) {
+    padding: 20px;
+  }
+}
+
+.app-main-content-wrapper {
+  min-height: 100vh;
+  
+  &.joblist {
+    min-height: 0;
+  }
+}
+.app-main-content {
+    //padding-bottom: 2.5rem;
+}
+.app-footer {
+    //  position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+//for tables. E.g. admin candidate list, application list
+.table-container {
+    overflow-y: auto;
+    overflow-x: auto;
+}

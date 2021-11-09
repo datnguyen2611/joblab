@@ -1,0 +1,9 @@
+{
+  "name": "AdminApplicationFilter",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AdminApplicationFilter.js",
+  "dependencies": {
+    "material-ui": "next"
+  }
+}

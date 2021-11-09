@@ -1,0 +1,11 @@
+.intro-tooltip {
+  font-size: 1rem !important;
+  
+  span {
+    text-align: left !important;
+  }
+  
+  @media all and (max-width: 768px) {
+    font-size: 0.7rem !important;
+  }
+}

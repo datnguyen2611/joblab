@@ -1,0 +1,544 @@
+
+//USAGE: @extend %parallax-scroll;
+%parallax-scroll {
+  /* Create the parallax scrolling effect */
+  @include background-attachment(fixed);
+  background-position: center;
+  background-repeat: no-repeat;
+  @include background-size(cover);
+  background-position: top;
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+    background-attachment: initial;
+  }
+}
+
+@function pxem($pxval, $baseline: 16) {
+  @return ($pxval / $baseline) * 1em;
+}
+
+@function pxrem($pxval, $baseline: 16) {
+  @return ($pxval / $baseline) * 1rem;
+}
+
+$mainWhite: #fff;
+$mainBlack: #000;
+$mainBlue: #00bcd4;
+$mainGrey: #575757;
+$mainDarkGrey: #888888;
+
+.inner-wrapper {
+    width: 100%;
+    max-width: 1532px;
+    padding-right: 26px;
+    padding-left: 26px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.placeholder {
+  position: relative;
+  width: 100%;
+  height: 0;
+  
+  &__item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--portrait {
+    padding-top: percentage(16 / 9);
+  }
+  &--landscape {
+    padding-top: percentage(9 / 16);
+  }
+}
+
+.home-carousel,
+.home-usage,
+.icon-list,
+.home-video {
+  @include media-breakpoint-down(sm) {
+    font-size: pxrem(14);
+  }
+}
+
+.home-intro {
+  position: relative;
+  height: 0;
+  padding-top: percentage(650 / 1350);
+  @include media-breakpoint-down(lg) {
+    font-size: pxrem(14);
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 100vh;
+  }
+  &__textbox {
+    >.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 60%;
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+  }
+  &__title {
+    font-size: 2.8em;
+    font-weight: 700;
+  }
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #90daf1;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+  &__sponsor {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: pxem(20);
+  }
+  &__logo {
+    width: pxem(183); 
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    color: black;
+    font-size: pxem(21);
+    font-weight: 700;
+    margin: 0;
+  }
+  .home-blue-btn {
+    background-color: #38f8ff!important;
+    &:hover,
+    &:focus {
+      background-color: #41d5da!important;
+    }
+  }
+  .home-green-btn {
+    background-color: #8bf15f!important;
+    &:hover,
+    &:focus {
+      background-color: #88ce6a!important;
+    }
+  }
+}
+
+.home-carousel {
+  position: relative;
+  background-color: rgba($mainWhite, 0.9);
+  >.inner-wrapper {
+    display: flex;
+    padding-top: pxem(100);
+    padding-bottom: pxem(100);
+    min-height: pxem(600);
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+  &__section {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    //white-space: nowrap;
+    img {
+      width: 100%;
+    }
+    &--reversed {
+      text-align: center;
+      @include media-breakpoint-down(md) {
+        order:1;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: pxem(30);
+    }
+  }
+  
+  &__slogan {
+    color: $mainBlue;
+    font-size: pxem(30);
+    @include media-breakpoint-down(sm) {
+      font-size: pxrem(20);
+    }
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: pxem(10);
+    color: $mainGrey;
+    border: 0;
+    background-color: transparent;
+    border-radius: pxem(10);
+    transition: 0.5s ease;
+    &.active {
+      box-shadow: 5px 5px pxem(20) 0 rgba($mainBlack, 0.24);
+      .fas {
+        color: $mainBlue;
+      }
+      .d-none {
+        display: block!important;
+      }
+    }
+  }
+  
+  .fas {    
+    font-size: pxem(25);
+    margin-right: pxem(30, 25);
+    transition: 0.5s ease;
+    &:hover, &:focus {
+      color: $mainBlue;
+    }
+  }
+  
+  &__title {
+    font-size: pxem(20);
+    margin-bottom: pxem(6, 20);
+    line-height: 1.2;
+  }
+  
+  &__desc {
+    font-size: pxem(15);
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  
+  &__btn {
+    margin-top: pxem(16);    
+    display: flex;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+      button {
+        padding-left: 0!important;
+        padding-right: 0!important;
+        width: 100%;
+      }
+      font {
+        font-size: pxrem(14);
+      }
+    }
+  }
+  
+  &--blue {
+    background: linear-gradient(160deg, rgba(195, 248, 255, 0.89) -20%, rgba(17, 174, 194, 0.95));
+    .home-carousel__slogan,.home-carousel__title,.home-carousel__desc,.home-carousel__item.active > .fas {
+      color: $mainWhite;
+    }
+  }
+}
+
+.home-usage {
+  position: relative;
+  background-color: rgba($mainWhite, 0.9);
+  >.inner-wrapper {
+    display:flex;
+    padding-top: pxem(100);
+    padding-bottom: pxem(100);
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+  &__left {
+    flex: 0 0 percentage(2/3);
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(md) {
+      order: 1;
+    }
+  }
+  &__right {
+    flex: 0 0 percentage(1/3);
+    @include media-breakpoint-down(md) {
+      margin-bottom: pxem(30);
+    }
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: pxem(30);
+    @include media-breakpoint-down(md) {
+      width: 70%;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+  &__item {
+    flex: 0 0 percentage(1/2);
+    padding-right: pxem(50);
+    margin-bottom: pxem(40);
+    @include media-breakpoint-down(md) {
+      padding-right: pxem(25);
+      margin-bottom: pxem(20);
+    }
+    @include media-breakpoint-down(xs) {
+      flex-basis: 100%;
+      padding-right: 0;
+    }
+    >.fas {
+      font-size: pxem(50);
+      color: $mainBlue;
+    }
+  }
+  &__slogan {
+    font-size: pxem(30);
+    font-weight: 700;
+  }
+  &__head {
+    font-size: pxem(20);
+    font-weight: 700;
+  }
+  &__desc {
+    font-size: pxem(16);
+    margin:0;
+  }
+}
+
+.icon-list {
+  position: relative;
+  background-color: rgba($mainWhite, 0.9);
+  >.inner-wrapper {
+    display:flex;    
+    flex-wrap: wrap;
+    padding-top: pxem(100);
+    padding-bottom: pxem(100);
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+  &__head {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: pxem(30);
+    margin-bottom: pxem(20, 30);
+  }
+  &__middle {
+    flex: 0 0 26%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include media-breakpoint-down(lg) {
+      flex: 0 0 30%;
+    }
+    img {
+      position: absolute;
+      height: 100%;
+      @include media-breakpoint-down(md) {
+        position: relative;
+        width: 40%;
+        height: auto;
+      }
+      @include media-breakpoint-down(xs) {
+        position: relative;
+        width: 60%;
+        height: auto;
+      }
+    }
+  }
+  &__side {
+    flex: 0 0 37%;
+    @include media-breakpoint-down(lg) {
+      flex: 0 0 35%;
+    }
+    @include media-breakpoint-down(md) {
+      order: 1;
+    }
+  }
+  &__item {
+    display: flex;    
+    align-items: center;
+    &--lhs {
+      @include media-breakpoint-up(lg) {
+        text-align: right;
+        justify-content: flex-end;
+        >.la {
+          order: 1;
+        }
+      }
+    }
+    &--rhs {
+      tex-align: left;
+    }
+    >.la {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: pxem(40);
+      width: pxem(80, 40);
+      height: pxem(80, 40);
+      border: 2px solid $mainDarkGrey;
+      border-radius: 50%;
+      margin: pxem(25, 40);
+      transition: 0.3s ease;
+      @include media-breakpoint-down(xs) {
+        margin-left: 0;
+      }
+      
+      &:hover, &:focus {
+        border-color: $mainBlue;
+        color: $mainWhite;
+        background-color: $mainBlue;
+      }
+    }
+  }
+  &__title {
+    font-size: pxem(20);
+  }
+  &__desc {
+    font-size: pxem(13);
+    margin: 0;
+  }
+}
+
+.home-video {
+  position: relative;
+  background: linear-gradient(160deg, rgba(141, 141, 141, 0.95) -20%, rgba(37, 37, 37, 0.95));
+  >.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: pxem(100);
+    padding-bottom: pxem(100);
+  }
+  &__title {
+    font-size: pxem(30);
+    color: $mainWhite;
+  }
+  &__desc {
+    font-size: pxem(20);
+    color: $mainWhite;
+    margin-bottom: pxem(30);
+  }
+  &__video {
+    width: 60%;
+    @include media-breakpoint-down(md) {
+      width: 90%;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+  .placeholder {
+    @include media-breakpoint-down(xs) {
+      padding-top: percentage(10 / 9);
+    }
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: pxem(30);
+  }
+}
+
+.company-logo {
+  position: relative;
+  background-color: rgba($mainWhite, 0.9);
+  >.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: pxem(100);
+    padding-bottom: pxem(100);
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 0 0 percentage(1/6);
+      @include media-breakpoint-down(md) {
+        flex: 0 0 percentage(1/4);
+        order: 1;
+      }
+      @include media-breakpoint-down(xs) {
+        flex: 0 0 percentage(1/3);
+        order: 1;
+      }
+    img {
+      width: 100%;
+      padding: 0 pxem(20);
+      @include media-breakpoint-down(md) {
+        padding: 0 pxrem(40);
+      }
+      @include media-breakpoint-down(xs) {
+        padding: pxrem(10);
+      }
+    }
+  }
+  &__title {
+    text-align: center;
+    flex: 0 0 100%;
+  }
+}
+
+.parallax-bg {
+  @extend %parallax-scroll;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;    
+  z-index: -1;
+  
+  &--macbook {
+    background-image: url("https://media.jobslab.io/web/picture/home/banner1.jpg");
+  }
+  
+  &--team {
+    background-image: url("https://media.jobslab.io/web/picture/home/banner2.jpg");
+  }
+  
+  &--successman {
+    background-image: url("https://media.jobslab.io/web/picture/home/banner3.jpg");
+  }
+  
+  &--officelady {
+    background-image: url("https://media.jobslab.io/web/picture/home/howitworks.jpg");
+  }
+  
+  &--desk {
+    background-image: url("https://media.jobslab.io/web/picture/home/home-iframe.jpg");
+  }
+}
+
+.overlay-shadow {
+  &:after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .25;
+    position: absolute;
+  }
+}

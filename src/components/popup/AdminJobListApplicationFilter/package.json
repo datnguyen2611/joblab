@@ -1,0 +1,9 @@
+{
+  "name": "AdminJobListApplicationFilter",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AdminJobListApplicationFilter.js",
+  "dependencies": {
+    "material-ui": "next"
+  }
+}

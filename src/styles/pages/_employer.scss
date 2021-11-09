@@ -1,0 +1,101 @@
+.price {
+  i {
+    font-size: 20px;
+  }
+  &.employer {
+    font-size: 30px!important;
+  }
+}
+
+.pt-default .employer {
+  margin-top: 1.875rem;
+}
+
+
+.parallax-employer {
+  position: absolute;
+  //background-image: url("https://media.jobslab.io/web/picture/employer/employer.jpg");
+  background-image: url("https://media.jobslab.io/web/picture/employer/employer-mid.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+.parallax-employer-howitworks {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/employer/employer-howitworks.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll;
+}
+
+.parallax-pricing {
+  position: absolute;
+  background-image: url("https://media.jobslab.io/web/picture/employer/pricing.jpg");
+  /* Set a specific height */
+  min-width: 100%;
+  min-height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  /* Create the parallax scrolling effect */
+  @extend %parallax-scroll
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.package-items {
+  &.employer {
+    i,
+    span {
+      font-size: 17px;
+    }
+  }
+}
+
+.login-header {
+  &.employer {
+    h3 {
+      text-align: left;
+    }
+  }
+}
+
+.btn.btn-primary.jr-btn-rounded.employer {
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+}
+
+.login-content.fullpage .form-control.employer {
+  background-color: #f5f5f5;
+}
+
+/*----------------------------------------------*/
+
+/*------------------RESPONSIVE------------------*/
+
+/*----------------------------------------------*/
+
+@media only screen and (max-width:1200px) {
+
+  .parallax-employer,
+  .parallax-employer-howitworks,
+  .parallax-pricing {
+    background-attachment: initial;
+  }
+  
+  .btn.btn-primary.jr-btn-rounded.employer {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+  }
+  
+  .login-content.fullpage .form-control.phone.employer {
+    border: none;
+  }
+
+}

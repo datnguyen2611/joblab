@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+
+Sitemap: https://jobslab.io/sitemap.xml
+Sitemap: https://jobslab.io/job-sitemap.xml
+Sitemap: https://jobslab.io/static-sitemap.xml

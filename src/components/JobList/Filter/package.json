@@ -1,0 +1,9 @@
+{
+  "name": "Filter",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Filter.js",
+  "dependencies": {
+    "material-ui": "next"
+  }
+}

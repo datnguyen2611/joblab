@@ -1,0 +1,38 @@
+.recording-video-btn {
+  width:25%;
+  height: 35px;
+
+  @media screen and (max-width: 763px) {
+    width: 40%;
+  }
+}
+
+.recording-video {
+    max-width: 640px;
+    max-height: 640px;
+    width: 100%;
+}
+
+
+.recording-video-img-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  img {
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.interview-question-instruction {
+  color: #8c8c8c;
+}
+
+.interview-question-text {
+  font-size: 20px;
+}

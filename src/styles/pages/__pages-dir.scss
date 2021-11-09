@@ -1,0 +1,51 @@
+/* Pages
+   ========================================================================== */
+@import "login";
+@import "error";
+@import "editor";
+@import "contact";
+@import "portfolio";
+@import "dashboard";
+@import "classic-dashboard";
+@import "dropzone";
+@import "home";
+@import "home-remake";
+@import "joblist";
+@import "postjob";
+@import "employer";
+@import "profile";
+@import "contactus";
+@import "admin";
+@import "modal";
+@import "termsofuse";
+@import "register";
+@import "candidatelist";
+@import "interviewvideo";
+@import "_client.scss";
+
+@font-face
+{
+    font-family: "Segoe UI";
+    src: url("fonts/segoe-ui.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.eot") format("woff2"),
+      url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,700i,800,800i|Quicksand:300,400,500,700');

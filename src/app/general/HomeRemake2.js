@@ -106,36 +106,6 @@ class Home extends Component {
         <Helmet>
           <title>JobsLab</title>
         </Helmet>
-        {/* <div className="home-intro">
-            
-            <Fade duration={2000}>
-              <div className="home-intro__textbox">
-                <div className="container">
-                  <h3 className="home-intro__title">Experienced Hires Made Simple.</h3>
-                  <div className="button-sec responsive">
-                    <Button variant="contained" color="primary" className="jr-btn jr-btn-slg home-blue-btn" onClick={(e) => this.props.history.push("/joblist")}>
-                      <font size="+1">Find Jobs</font>
-                    </Button>
-                    <Button variant="contained" className="jr-btn jr-btn-slg bg-success text-white home-green-btn" onClick={(e) => this.props.history.push("/employer")}>
-                      <font size="+1">Find Talent</font>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </Fade>
-            
-            <div className="home-intro__bg">
-              <img className="d-none d-lg-block" src={encodeURI(WEB_IMAGE_URL+"home/homepage-01.png")}/>
-            </div>
-            
-            <div className="home-intro__sponsor">
-              <p className="home-intro__text">Powered by:</p>
-              <div className="home-intro__logo">
-                <img src={encodeURI(WEB_IMAGE_URL+"home/cyberport.png")}/>
-              </div>
-            </div>
-            
-          </div> */}
         <div className="content-1-wrapper">
           <div className="css-v33p9q">
             <Container>

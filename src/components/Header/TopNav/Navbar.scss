@@ -1,6 +1,5 @@
 
 .navbar-clickable-options-container-left {
-
   width: 100%;
   display: flex;
   align-items: center;
@@ -26,5 +25,13 @@
     text-decoration: none;
     color: #3A3A3A;
     transition: 0.1s;
+  }
+}
+@media only screen and (max-width: 768px){
+  .navbar-clickable-options-container-left{
+      display: none;
+  }
+  .auth-bar{
+    display: none !important;
   }
 }

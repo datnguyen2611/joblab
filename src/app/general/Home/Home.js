@@ -7,8 +7,8 @@ import Fade from 'react-reveal/Fade';
 import config from 'react-reveal/globals';
 import PropTypes from "prop-types";
 import { Helmet } from 'react-helmet';
-import { detailCards, recentActivity } from "./data";
-import IconWithTextCard from "./IconWithTextCard";
+import { detailCards, recentActivity } from "../data";
+import IconWithTextCard from "./../IconWithTextCard";
 import Drift from "components/Drift";
 
 import Button from '@material-ui/core/Button';
@@ -19,7 +19,7 @@ import { WEB_IMAGE_URL, WEB_VIDEO_URL } from 'constants/PictureUrl';
 
 //import { ParallaxProvider } from 'react-scroll-parallax';
 //import { Parallax } from 'react-scroll-parallax';
-
+import Content1 from './Content1/Content1'
 import Beta from 'components/popup/Beta';
 
 config({ ssrFadeout: true });
@@ -48,7 +48,7 @@ class Home extends Component {
   }
   componentDidMount() {
     //this.props.changeNavigationStyle({HORIZONTAL_NAVIGATION});
-    this.props.updateHeaderStyle(HORIZONTAL_NAVIGATION, true);
+    // this.props.updateHeaderStyle(HORIZONTAL_NAVIGATION, true);
     window.addEventListener('scroll', this.handleScroll, false);
     //document.getElementById("home-video").controls = false;
     /*const videoElement = document.getElementById('home-video');
@@ -210,10 +210,10 @@ class Home extends Component {
     return (
       <div className="home-wrapper">
           <Helmet>
-              <title>JobsLab</title>
+              <title>JobsLab1</title>
           </Helmet>
-          <div className="home-intro">
-            
+          <Content1></Content1>
+          {/* <div className="home-intro">
             <Fade duration={2000}>
               <div className="home-intro__textbox">
                 <div className="container">
@@ -242,7 +242,7 @@ class Home extends Component {
             </div>
             
           </div>
-                
+               */}
         <div className="home-imgcontainer home-carousel-responsive">        
           <div className="parallax01"></div>
           <div className="home-bannercontainer white-style">

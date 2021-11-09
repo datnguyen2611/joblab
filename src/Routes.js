@@ -18,7 +18,7 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Sidebar from 'components/sideBar/SideNav/index';
 
-import Home from './app/general/Home';
+import Home from './app/general/Home/Home';
 import HomeRemake from './app/general/HomeRemake';
 import Employer from './app/general/Employer';
 import TermsOfUse from './app/general/TermsOfUse';
@@ -157,7 +157,7 @@ class Routes extends Component {
                         {/*<Route exact path='/test' component={Test} />
                         <Route exact path='/testrec' component={TestRecorder} />*/}
                         <Route exact path='/' render={props => <HomeRemake updateHeaderStyle={this.updateHeaderStyle}  /> } />
-
+                        <Route path='/test' render={props => <Home /> } />
                         <Route render={props => <HomeRemake updateHeaderStyle={this.updateHeaderStyle}  /> } />
                         {/*<Route path="*"><NotFound updateHeaderStyle={this.updateHeaderStyle} /></Route>*/}
                     </Switch>

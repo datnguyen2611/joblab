@@ -1,0 +1,29 @@
+
+.navbar-clickable-options-container-left {
+  margin:  auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .navbar-clickable-option {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 18px 13px;
+    text-decoration: none;
+    color: #3a3a3a;
+    transition: 0.1s;
+  }
+  .nav-link-item{
+    margin: auto 10px;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 18px 13px;
+    text-decoration: none;
+    color: #3A3A3A;
+    transition: 0.1s;
+  }
+}

@@ -7,11 +7,11 @@ import Avatar from 'react-avatar';
 import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import {Dropdown, DropdownMenu, DropdownToggle} from 'reactstrap';
+import {Container, Dropdown, DropdownMenu, DropdownToggle} from 'reactstrap';
 import {IntlProvider} from 'react-intl';
 import axios from "axios";
 import io from 'socket.io-client';
-
+import ListItemsNav from './TopNav/ListITemsNav';
 import SearchBox from 'components/SearchBox';
 import AppNotification from 'components/Header/AppNotification/index';
 import {switchLanguage, toggleCollapsedNav} from 'actions/Setting';
@@ -288,8 +288,8 @@ constructor(props) {
       <IntlProvider locale="en">
       <AppBar id="header-bar" style={{'width':this.state.headerWidth, backgroundColor:(navigationStyle === HORIZONTAL_NAVIGATION)? this.state.headerColor:null}}
         className={`app-main-header ${(navigationStyle === HORIZONTAL_NAVIGATION /*&& horizontalNavPosition === BELOW_THE_HEADER*/) ? 'transparent' : ''}`}>
-        
-        <Toolbar className="app-toolbar" disableGutters={false}>
+       <Container>
+          <Toolbar className="app-toolbar" disableGutters={false}>
           {/*navigationStyle === HORIZONTAL_NAVIGATION ?
             <div className="d-block d-lg-none pointer mr-3" onClick={this.onToggleCollapsedNav}>
               <span className="jr-menu-icon">
@@ -301,17 +301,16 @@ constructor(props) {
                         onClick={this.onToggleCollapsedNav}>
               <span className="menu-icon"/>
             </IconButton>*/
-            <IconButton className={`jr-menu-icon mr-3 ${drawerStyle}`} aria-label="Menu"
-                        onClick={this.onToggleCollapsedNav}>
-              <span className="menu-icon"/>
-            </IconButton>
+            // <IconButton className={`jr-menu-icon mr-3 ${drawerStyle}`} aria-label="Menu"
+            //             onClick={this.onToggleCollapsedNav}>
+            //   <span className="menu-icon"/>
+            // </IconButton>
           }
           
           <Link className="app-logo mr-2" to="/">
             <img src={JOBSLAB_ICON_URL+"jobslab_white.png"} alt="Jobslab" title="Jobslab"/>
-          </Link>
-          
-          { ( this.props.enableSearchBar ) &&
+          </Link> 
+          {/* { ( this.props.enableSearchBar ) &&
             <SearchBox styleName="d-none d-lg-block" placeholder=""
                      onChange={this.updateSearchText.bind(this)}
                      searchByKey={this.searchByKey.bind(this)}
@@ -319,18 +318,18 @@ constructor(props) {
                      clearText={this.clearText.bind(this)}
                      value={this.state.searchText}
             />
-          }
-          
+          } */}
+            <ListItemsNav/>
           {/* (navigationStyle === HORIZONTAL_NAVIGATION && horizontalNavPosition === INSIDE_THE_HEADER) &&
           <Menu /> */}
           { !isLoggedin ?
           <div className="auth-bar">
-            <a class="auth-bar__resources d-none d-lg-flex" href="https://blog.jobslab.io">
+            {/* <a class="auth-bar__resources d-none d-lg-flex" href="https://blog.jobslab.io">
               <span>Resources</span>
               <i class="fas fa-chevron-right"></i>
-            </a>
+            </a> */}
             {/* !isMobileView && <LinkedinFollow /> */}
-            <div className="d-none d-lg-flex"><LinkedinFollow /></div>
+            {/* <div className="d-none d-lg-flex"><LinkedinFollow /></div> */}
             <div className="auth-bar__btn-group">
               <Button className="auth-bar__login jr-btn text-white mr-1 mr-md-2" onClick={() => this.openModal('login')}>
                 Login
@@ -403,6 +402,8 @@ constructor(props) {
 
         <SignupForm isOpen={this.state.signupModalIsOpen} closeModal={() => this.closeModal('signupModalIsOpen')} />
         <LoginForm isOpen={this.state.loginModalIsOpen} openSignupModal={this.openSignupModal} closeModal={() => this.closeModal('loginModalIsOpen')} />
+         </Container> 
+       
       </AppBar>
 
     </IntlProvider>

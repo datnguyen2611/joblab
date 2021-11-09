@@ -20,6 +20,7 @@ import Sidebar from 'components/sideBar/SideNav/index';
 
 import Home from './app/general/Home/Home';
 import HomeRemake from './app/general/HomeRemake';
+import HomeRemake2 from './app/general/HomeRemake2';
 import Employer from './app/general/Employer';
 import TermsOfUse from './app/general/TermsOfUse';
 import PrivacyPolicy from './app/general/PrivacyPolicy';
@@ -156,7 +157,7 @@ class Routes extends Component {
                         {/*<Route exact path='/testhome' render={props => <TestHome updateHeaderStyle={this.updateHeaderStyle}  /> } />*/}
                         {/*<Route exact path='/test' component={Test} />
                         <Route exact path='/testrec' component={TestRecorder} />*/}
-                        <Route exact path='/' render={props => <HomeRemake updateHeaderStyle={this.updateHeaderStyle}  /> } />
+                        <Route exact path='/' render={props => <HomeRemake2 updateHeaderStyle={this.updateHeaderStyle}  /> } />
                         <Route path='/test' render={props => <Home /> } />
                         <Route render={props => <HomeRemake updateHeaderStyle={this.updateHeaderStyle}  /> } />
                         {/*<Route path="*"><NotFound updateHeaderStyle={this.updateHeaderStyle} /></Route>*/}
